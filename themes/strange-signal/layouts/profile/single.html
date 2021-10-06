@@ -1,0 +1,25 @@
+{{ partial "header" .}}
+    {{ partial "main-nav.html" .}}
+    {{ partial "floating-logo.html" .}}
+    <div id="profile" class="content-profile container">
+        <div class="row my-5">
+            <div class="col-sm-4">
+                {{ partial "profile-pic.html" .}}
+                {{ partial "social.html" . }}
+            </div>
+            <div class="col-sm-8" >
+                {{ .Content }}
+            </div>
+
+            
+        </div>
+    </div> 
+    <div class="section-bg-drk">
+        <div class="container py-4">
+            <div class="row my-4">
+                {{range where .Site.Pages "Type" "=" "fragment1" }} {{.Content}} {{end}}
+            </div>
+        </div>
+        
+    </div>
+{{ partial "footer" .}}

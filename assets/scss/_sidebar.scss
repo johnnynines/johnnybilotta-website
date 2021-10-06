@@ -1,0 +1,37 @@
+#leftSidebar {
+    position: relative;
+    padding-top: 2em;
+
+    .sidebar-content {
+        position: fixed;
+        width: 17em;
+
+        .sidebar-description {
+            border-top: 1px dotted $mtl-grey;
+            border-bottom: 1px dotted $mtl-grey;
+            font-family: $input-sans-reg;
+            font-weight: $light;
+            margin-bottom: 2em;
+            padding: 1em 0;
+            text-transform: uppercase;
+    
+            p { 
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+
+        .sidebar-freetext {
+            font-family: $input-sans-reg;
+            font-size: $font-size-sm;
+            font-weight: $light;
+            text-transform:uppercase;
+        }
+    }
+
+    .social-icons {
+        a {
+            color: $lgt-grey;
+        }
+    }
+}

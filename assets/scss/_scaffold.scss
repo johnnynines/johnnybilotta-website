@@ -1,0 +1,58 @@
+body {
+    background-color: $blu-new;
+    color: $lgt-grey;
+}
+
+#mainContainer {
+    background-attachment: fixed;
+    background-image: url("../img/hero-bg-starfield.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    padding-top: 2em;
+}
+#mainContainer {
+    .post {
+        background: rgba(16, 26, 35, 0.85);
+        margin-bottom: 2em;
+    
+        .post-heading, .post-summary {
+            padding:  0 1em;
+        }
+    
+        .post-summary {
+            padding-bottom: 1em;
+        }
+    }
+}
+
+#mainNav {
+    background-color: rgba(9, 25, 34, 0.85);
+}
+
+.border-top {
+    border-top: 1px dotted $mtl-grey !important;
+}
+
+.border-bottom {
+    border-bottom: 1px dotted $mtl-grey !important;
+}
+
+#modalContact {
+    .modal-content{
+        background-color: $drkr;
+        border-color: $blu;
+    }
+   #contactForm {
+       textarea {
+           height: 120px;
+       }
+   }
+}
+
+.section-bg-drk {
+    background-color: $drkr;
+}

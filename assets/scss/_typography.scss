@@ -1,0 +1,102 @@
+// Resets
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:visited, &:active, &:focus {
+        color: inherit;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $input-sans-narrow;
+    font-weight: 200;
+}
+
+h1 {
+    color: $red;
+}
+
+.post {
+    h1 {
+        color: $red;
+        margin-bottom: 0.15rem;
+
+        a {
+            color: $red;
+        }
+    }
+}
+
+.single-post {
+    h1 {
+        font-size: $font-size-xxl;
+        text-transform: uppercase;
+    }
+
+    .post-body {
+        font-size: $font-size-md;  
+        line-height: $line-height-md; 
+    }
+}
+
+body {
+    font-family: $sans-serif;
+    font-weight: $normal;
+    line-height: 1.75em;
+}
+
+ul.navbar-nav {
+    font-family: $mono;
+}
+
+span.post-meta-date {
+    margin-bottom: 1em;
+}
+
+#socialSharingGroup {
+    position: fixed;
+    top: 45vh;
+    left: 15vw;
+}
+
+#socialLinkGroup {
+    ul {
+        display: inline;
+        li {
+            display: inline;
+            a {
+                color: $lgt-grey;
+            }
+        }
+    }
+}
+
+.social-icons {
+    font-size: 1.5em;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin: 0 .5rem;
+            padding: 0.25rem;
+        }
+    }
+}
+
+#profile {
+    #socialLinkGroup {
+
+    }
+}
+
+.post-date {
+   font-family: $titles-cond;
+   font-size: $font-size-md;
+   color: $dkr-grey;
+}

@@ -1,0 +1,41 @@
+{{ partial "header.html" . }}
+	{{ partial "main-nav.html" .}}
+	<div id="mainContainer" class="container-fluid">
+		<div class="row">
+			<div id="leftSidebar" class="col-sm-3 col-md-3 col-lg-3 sidebar ps-5">
+
+			{{ partial "sidebar-content.html" . }}
+
+			</div>
+			<div class="col-sm-7 offset-md-1 content">
+				{{ range (where .Site.Pages "Section" "post") }}
+				<div class="post">
+					<div class="feature-img-container">
+						{{ if .Params.featured_image }}
+						{{ range .Resources.Match "images/featured-image.jpg"}}
+							<img class="featured-image" src="{{ .Permalink }}" />
+						{{ end }}
+						{{ else }}
+							<img class="featured-image" src="{{ .Site.Params.featuredImageDefault | absURL }}" />
+						{{ end }}
+					</div>
+					<div class="post-heading">
+						
+						<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+						<span class="post-meta-date">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
+					</div>
+					<div class="post-summary">
+						{{ .Summary }}
+					</div>
+				</div>
+				{{ end }}
+
+				<div class="text-center">
+					{{ template "_internal/pagination.html" . }}
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+{{ partial "footer.html" . }}

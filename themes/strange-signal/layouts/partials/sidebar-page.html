@@ -1,0 +1,21 @@
+
+	<div class="sidebar-content">
+		<div id="mainLogo">
+			<a href="{{ .Site.BaseURL }}"><img src="{{ "img/logo-monogram-scan@2x.png" | absURL }}" alt="test" /></a>
+		</div>
+
+
+		<div class="sidebar-share sidebar-icons">
+			{{ partial "social-share.html" . }}
+		</div>
+
+		{{ if .Site.Params.contact_email }}
+		<div class="sidebar-contact">
+			&#187; <a href="mailto:{{ .Site.Params.contact_email }}">Email Us</a>
+		</div>
+		{{ end }}
+
+		<p class="copyright">{{ with .Site.Params.copyright }}{{ . }}{{ else }}&copy; {{ now.Format "2006" }}. All rights reserved. {{end}}</p>
+		<p class="attr">Powered by <a href="http://gohugo.io">Hugo</a>
+
+	</div>

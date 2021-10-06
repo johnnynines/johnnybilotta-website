@@ -1,0 +1,18 @@
+baseurl = "http://johnnybilotta.com"
+title = "Johnny Bilotta | Digital Product Designer"
+author = "Johnny Bilotta"
+copyright = "2021"
+theme = "strange-signal"
+
+[params]
+	colorScheme = "night"
+	DateFormat = "2 Jan 2006"
+	description = "Digital Product Designer + Developer + Technophile"
+	sidebarFreeText = "Hi! My name is Johnny. I design digital products and code things."
+	featuredImageDefault = "img/featured-image-default.jpg"
+
+[module]
+	[module.hugoVersion]
+		extended = true
+		max = ''
+		min = ''

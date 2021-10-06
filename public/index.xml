@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Johnny Bilotta | Digital Product Designer</title>
+    <link>https://johnnybilotta.com/</link>
+    <description>Recent content on Johnny Bilotta | Digital Product Designer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>2021</copyright>
+    <lastBuildDate>Wed, 18 Aug 2021 20:11:35 -0400</lastBuildDate><atom:link href="https://johnnybilotta.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Sample Post</title>
+      <link>https://johnnybilotta.com/post/my-first-sample-post/</link>
+      <pubDate>Wed, 18 Aug 2021 20:11:35 -0400</pubDate>
+      
+      <guid>https://johnnybilotta.com/post/my-first-sample-post/</guid>
+      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Amet porttitor eget dolor morbi. Sit amet commodo nulla facilisi nullam vehicula. Amet risus nullam eget felis eget nunc lobortis mattis. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Elementum sagittis vitae et leo duis ut diam quam. Nam libero justo laoreet sit.</description>
+    </item>
+    
+    <item>
+      <title>Page or Post Bundle Example</title>
+      <link>https://johnnybilotta.com/post/example-bundle/</link>
+      <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnnybilotta.com/post/example-bundle/</guid>
+      <description>If I start writing in here will it just go to the front of the damn thing and be part of the content that gets pulled in?
+Because if that is the case than I am sold. I mean that is yet another breakthrough in learning about Hugo.
+Man, this has been a lot more difficult than I had originally thought. However, I am beginning to enjoy it. The learning curve is quit a bit but I think I am getting the hang of it now.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://johnnybilotta.com/profile/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnnybilotta.com/profile/about/</guid>
+      <description>Hello, my name is Johnny. Thank you for checking out my site! First, thank you for visiting my site. No matter what brought you here, I appreciate your time and interest in who I am and what I do.
+My name is Johnny, and I am a digital product designer and front-end developer. My career began during the mid-90s, where I started as a graphic designer, in advertising, after attending The Art Institute of Philadelphia, where I studied industrial design.</description>
+    </item>
+    
+    <item>
+      <title>Racekrafts</title>
+      <link>https://johnnybilotta.com/profile/badges/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnnybilotta.com/profile/badges/</guid>
+      <description>Achievements Some of my more notable awards I have received during my career.</description>
+    </item>
+    
+  </channel>
+</rss>

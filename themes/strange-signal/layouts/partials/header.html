@@ -12,17 +12,10 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" href="https://use.typekit.net/lqf3uyv.css">
 	<!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/bootstrap.min.css"> -->
-	<!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css"> -->
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css">
 	<!--<style type="text/css" media="all">
 		# Optional: comment out strange-case.css above, minify it with YUICompressor and paste inline styles here to lose a request...
 	</style>-->
-
-	{{ $options := (dict "targetPath" "/css/styles.css" "enableSourceMap" true )}}
-	{{ $scss := resources.Get "scss/main.scss" }}
-	{{ if $scss }}
-		{{ $styles := $scss | resources.ToCSS $options }}
-		<link rel="stylesheet" href="{{ $styles.Permalink }}">
-	{{ end }}
 	
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

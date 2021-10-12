@@ -23404,19 +23404,20 @@ a {
     color: inherit; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: input-sans-narrow, sans-serif;
-  font-weight: 200; }
+  font-family: prometo, sans-serif;
+  font-weight: 300; }
 
 h1, .h1 {
   color: #ff001f; }
 
 .post h1, .post .h1 {
-  color: #ff001f;
+  color: #fff;
   margin-bottom: 0.15rem; }
   .post h1 a, .post .h1 a {
     color: #ff001f; }
 
 .single-post h1, .single-post .h1 {
+  color: #fff;
   font-size: 4rem;
   text-transform: uppercase; }
 
@@ -23458,8 +23459,9 @@ span.post-meta-date {
       padding: 0.25rem; }
 
 .post-date {
-  font-family: video-cond, sans-serif;
+  font-family: prometo, sans-serif;
   font-size: 1.2rem;
+  font-weight: 300;
   color: #6d7d8b; }
 
 #mainLogo {
@@ -23470,11 +23472,11 @@ span.post-meta-date {
 
 #floatingLogo {
   position: fixed;
-  top: 2%;
-  left: 5%;
+  top: 0;
+  left: 0%;
   z-index: 2000; }
   #floatingLogo img {
-    width: 10em; }
+    width: 25rem; }
 
 .feature-img-container {
   height: 260px;
@@ -23485,7 +23487,18 @@ span.post-meta-date {
   width: 100%; }
 
 #profileImg img {
-  width: 20rem; }
+  width: 15rem; }
+
+#mobileLogo {
+  display: none; }
+
+@media (max-width: 767.98px) {
+  #mobileLogo {
+    display: block; }
+    #mobileLogo #floatingLogo {
+      left: -10%; }
+      #mobileLogo #floatingLogo img {
+        width: 18rem; } }
 
 body {
   background-color: #14212a;
@@ -23529,6 +23542,13 @@ body {
   background-color: #091922; }
 
 #leftSidebar {
+  display: none; }
+
+@media (min-width: 768px) {
+  #leftSidebar {
+    display: block; } }
+
+#leftSidebar {
   position: relative;
   padding-top: 2em; }
   #leftSidebar .sidebar-content {
@@ -23550,6 +23570,11 @@ body {
       font-size: 0.75rem;
       font-weight: 200;
       text-transform: uppercase; }
+  #leftSidebar .sidebar-content {
+    display: block; }
+  @media (min-width: 768px) {
+    #leftSidebar .sidebar-content {
+      display: block; } }
   #leftSidebar .social-icons a {
     color: #96acbf; }
 

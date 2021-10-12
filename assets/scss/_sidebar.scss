@@ -29,6 +29,16 @@
         }
     }
 
+    .sidebar-content {
+        display: block;
+    }
+
+    @include media-breakpoint-up(md) {
+        .sidebar-content {
+            display: block;
+        }
+    }
+
     .social-icons {
         a {
             color: $lgt-grey;

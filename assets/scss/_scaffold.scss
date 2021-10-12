@@ -56,3 +56,13 @@ body {
 .section-bg-drk {
     background-color: $drkr;
 }
+
+#leftSidebar {
+    display: none;
+}
+
+@include media-breakpoint-up(md) {
+    #leftSidebar {
+        display: block;
+    }
+}

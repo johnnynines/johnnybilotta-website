@@ -1,4 +1,7 @@
 {{ partial "modal-contact.html" . }}
+<div id="mobileFooter" class="container-fluid">
+  {{ partial "mobile-footer.html" . }}
+</div>
 
 {{ template "_internal/google_analytics.html" . }}
 
@@ -27,7 +30,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="{{ .Site.BaseURL }}/js/bootstrap.min.js"></script>
-<script src="{{ .Site.BaseURL }}/js/scripts.js"></script>
+{{ $scripts := resources.Get "js/main.js" }}
+<script src="{{ $scripts.RelPermalink }}"></script>
 
 </body>
 </html>

@@ -9,11 +9,11 @@
 
 #floatingLogo {
     position: fixed;
-    top: 2%;
-    left: 5%;
+    top: 0;
+    left: 0%;
     z-index: 2000;
     img {
-        width: 10em;
+        width: 25rem;
     }
 }
 
@@ -29,6 +29,24 @@
 
 #profileImg {
     img {
-        width: 20rem;
+        width: 15rem;
+    }
+}
+
+#mobileLogo {
+    display: none;
+}
+
+@include media-breakpoint-down(md){
+    #mobileLogo {
+        display: block;
+
+        #floatingLogo {
+            left: -10%;
+
+            img {
+                width: 18rem;
+            }
+        }
     }
 }

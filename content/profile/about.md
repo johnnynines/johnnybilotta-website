@@ -5,7 +5,7 @@ menu: "main"
 type: "profile"
 ---
 
-# Hello, my name is Johnny. Thank you for checking out my site!
+# Hello, my name is Johnny!
 
 First, thank you for visiting my site. No matter what brought you here, I appreciate your time and interest in who I am and what I do.
 

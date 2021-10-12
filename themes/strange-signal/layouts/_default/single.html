@@ -9,7 +9,7 @@
 		{{ end }}
 
 		{{ else }}
-		<div id="letterboxHeader" class="row align-items-end" style="background-image: url({{ .Site.Params.featuredImageDefault | absURL }})">	
+		<div id="letterboxHeader" class="row align-items-end" style="background-image: url( {{ .Site.Params.featuredImageDefault | relURL }} )">	
 		{{ end }}
 
 			<div class="col-sm-7 offset-sm-3 py-3 post-heading">

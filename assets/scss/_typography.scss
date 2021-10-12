@@ -12,8 +12,8 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $input-sans-narrow;
-    font-weight: 200;
+    font-family: $prometo;
+    font-weight: $med;
 }
 
 h1 {
@@ -22,7 +22,7 @@ h1 {
 
 .post {
     h1 {
-        color: $red;
+        color: $wht;
         margin-bottom: 0.15rem;
 
         a {
@@ -33,6 +33,7 @@ h1 {
 
 .single-post {
     h1 {
+        color: $wht;
         font-size: $font-size-xxl;
         text-transform: uppercase;
     }
@@ -96,7 +97,8 @@ span.post-meta-date {
 }
 
 .post-date {
-   font-family: $titles-cond;
+   font-family: $prometo;
    font-size: $font-size-md;
+   font-weight: $med;
    color: $dkr-grey;
 }

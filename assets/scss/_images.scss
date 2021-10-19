@@ -37,6 +37,15 @@
     display: none;
 }
 
+.post-body {
+    figure {
+        .full {
+            position: relative;
+            width: 100%;
+        }
+    }
+}
+
 @include media-breakpoint-down(md){
     #mobileLogo {
         display: block;

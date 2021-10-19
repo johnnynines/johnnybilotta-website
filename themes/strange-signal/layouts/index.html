@@ -15,7 +15,7 @@
 				<div class="post">
 					<div class="feature-img-container">
 						{{ if .Params.featured_image }}
-						{{ range .Resources.Match "images/featured-image.jpg"}}
+						{{ range .Resources.Match "featured-image.jpg"}}
 							<img class="featured-image" src="{{ .Permalink }}" />
 						{{ end }}
 						{{ else }}

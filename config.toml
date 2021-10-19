@@ -1,7 +1,7 @@
 baseURL = "https://johnnybilotta.com"
 title = "Johnny Bilotta | Digital Product Designer"
 author = "Johnny Bilotta"
-copyright = "2021 Johnny Bilotta"
+copyright = "2021"
 theme = "strange-signal"
 
 [params]

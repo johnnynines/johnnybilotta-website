@@ -5,7 +5,7 @@
     <link>https://johnnybilotta.com/</link>
     <description>Recent content on Johnny Bilotta | Digital Product Designer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>2021 Johnny Bilotta</copyright>
+    <copyright>2021</copyright>
     <lastBuildDate>Wed, 18 Aug 2021 20:11:35 -0400</lastBuildDate><atom:link href="https://johnnybilotta.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Sample Post</title>
@@ -17,14 +17,44 @@
     </item>
     
     <item>
+      <title>Wallpaper Wednesday: Destiny 2</title>
+      <link>https://johnnybilotta.com/post/destiny-wallpaper/</link>
+      <pubDate>Wed, 18 Aug 2021 20:11:35 -0400</pubDate>
+      
+      <guid>https://johnnybilotta.com/post/destiny-wallpaper/</guid>
+      <description>Wallpaper Wednesday is a practice I have not done for many years. In the early days of Indy Hall I would put out a digital wallpaper each week. This helped me stay fresh with design and the suite of tools I use on a regular basis. It also gave me the freedom to explore concepts I normally would not be able to while completing client work. I am humbly attempting to revive this practice with this initial release of the new Wallpaper Wednesday.</description>
+    </item>
+    
+    <item>
       <title>Page or Post Bundle Example</title>
       <link>https://johnnybilotta.com/post/example-bundle/</link>
       <pubDate>Mon, 09 Aug 2021 00:00:00 +0000</pubDate>
       
       <guid>https://johnnybilotta.com/post/example-bundle/</guid>
-      <description>If I start writing in here will it just go to the front of the damn thing and be part of the content that gets pulled in?
-Because if that is the case than I am sold. I mean that is yet another breakthrough in learning about Hugo.
+      <description>If I start writing in here will it just go to the front of the damn thing and be part of the content that gets pulled in? Because if that is the case than I am sold. I mean that is yet another breakthrough in learning about Hugo.
 Man, this has been a lot more difficult than I had originally thought. However, I am beginning to enjoy it. The learning curve is quit a bit but I think I am getting the hang of it now.</description>
+    </item>
+    
+    <item>
+      <title>Sites Explored - April 2021</title>
+      <link>https://johnnybilotta.com/post/sites-found-july/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnnybilotta.com/post/sites-found-july/</guid>
+      <description>Been a minute since I published one of these. Below are some sites I found during my travels around the internet, that digital product designers and fellow technophiles may find helpful or interesting.
+Haikei App   https://haikei.app/
+Haikei App is the evolution of two web projects by Z Creative Labs (https://zcreativelabs.com/). It is a FREE web app that helps produce unique SVG design assets for use in your web projects.</description>
+    </item>
+    
+    <item>
+      <title>Want to know if your idea is viable?</title>
+      <link>https://johnnybilotta.com/post/product-viability/</link>
+      <pubDate>Thu, 13 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnnybilotta.com/post/product-viability/</guid>
+      <description>Testing the viability of a product or service can be tricky. However, in my experience, I have found that if you explore the answers, provided by two fundamental questions, you can get to a final proof of viability. As well as gain a great foundation for the success of your business, its marketing goals and its customer support.
+Question 01: What problem does your product or service solve?
+The best products and services in history are supremely successful because they proverbially, scratch a certain itch, felt by enough people, to make a viable market.</description>
     </item>
     
     <item>

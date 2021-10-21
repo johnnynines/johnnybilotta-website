@@ -12,7 +12,7 @@ min_version = 0.1
 
 [author]
 	name = "Johnnynines"
-	homepage = "https://www.johnnybilotta.com"
+	homepage = "/"
 
 # If porting an existing theme
 [original]

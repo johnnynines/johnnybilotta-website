@@ -2,7 +2,7 @@
 title: "Want to know if your idea is viable?"
 date: "2020-08-13"
 author: Johnny Bilotta
-featured_image: "screenshot-idea.jpg"
+featured_image: "featured-image.jpg"
 ---
 
 Testing the viability of a product or service can be tricky. However, in my experience, I have found that if you explore the answers, provided by two fundamental questions, you can get to a final proof of viability. As well as gain a great foundation for the success of your business, its marketing goals and its customer support.

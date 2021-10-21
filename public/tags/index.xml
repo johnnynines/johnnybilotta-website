@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Johnny Bilotta | Digital Product Designer</title>
-    <link>https://main.d3p1wyqeqwb6fs.amplifyapp.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Johnny Bilotta | Digital Product Designer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>2021</copyright><atom:link href="https://main.d3p1wyqeqwb6fs.amplifyapp.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>2021</copyright><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

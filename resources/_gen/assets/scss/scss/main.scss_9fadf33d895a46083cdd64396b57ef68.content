@@ -23437,7 +23437,8 @@ body {
   line-height: 1.75em; }
 
 ul.navbar-nav {
-  font-family: dico-code-one, mono; }
+  font-family: dico-code-one, mono;
+  text-transform: uppercase; }
 
 span.post-meta-date {
   margin-bottom: 1em; }
@@ -23529,6 +23530,18 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+.gradient-bg {
+  background-attachment: fixed;
+  background-image: url("../img/background-gradient-01@2x.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.message-404 {
+  height: 80vh; }
+  .message-404 img {
+    width: 100%; }
+
 .content {
   padding-top: 2em; }
 
@@ -23552,12 +23565,14 @@ body {
 #modalContact .modal-content {
   background-color: #091922;
   border-color: #19c8ff; }
+  #modalContact .modal-content .modal-header {
+    border-bottom: 1px dotted #19c8ff; }
 
 #modalContact #contactForm textarea {
   height: 120px; }
 
 .section-bg-drk {
-  background-color: #091922; }
+  background-color: #101a23; }
 
 #leftSidebar {
   display: none; }

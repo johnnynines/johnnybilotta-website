@@ -11,6 +11,20 @@ body {
     background-size: cover;
 }
 
+.gradient-bg {
+    background-attachment: fixed;
+    background-image: url("../img/background-gradient-01@2x.png");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.message-404 {
+    height: 80vh;
+    img {
+        width: 100%;
+    }
+}
 .content {
     padding-top: 2em;
 }
@@ -45,6 +59,10 @@ body {
     .modal-content{
         background-color: $drkr;
         border-color: $blu;
+
+        .modal-header {
+            border-bottom: 1px dotted $blu;
+        }
     }
    #contactForm {
        textarea {
@@ -54,7 +72,7 @@ body {
 }
 
 .section-bg-drk {
-    background-color: $drkr;
+    background-color: $dark;
 }
 
 #leftSidebar {

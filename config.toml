@@ -11,8 +11,22 @@ theme = "strange-signal"
 	sidebarFreeText = "Hi! My name is Johnny. I design digital products and code things."
 	featuredImageDefault = "img/featured-image-default.jpg"
 
+[menu]
+[[menu.main]]
+	identifier = 'home'
+	name = 'Home'
+	url = '/'
+	weight = -110
+
 [module]
 	[module.hugoVersion]
 		extended = true
 		max = ''
 		min = ''
+
+[deployment]
+order = [".jpg$", ".png$"]
+
+[[deployment.targets]]
+name = "production"
+URL = "s3://johnnybilotta.com?region=us-east-1"

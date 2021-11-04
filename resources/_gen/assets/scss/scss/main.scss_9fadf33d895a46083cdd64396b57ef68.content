@@ -23437,7 +23437,7 @@ body {
   line-height: 1.75em; }
 
 ul.navbar-nav {
-  font-family: dico-code-one, mono;
+  font-family: prometo, sans-serif;
   text-transform: uppercase; }
 
 span.post-meta-date {
@@ -23478,6 +23478,20 @@ span.post-meta-date {
   list-style: none; }
   .file-list li a {
     color: #19c8ff; }
+
+#contactForm input, #contactForm textarea {
+  background-color: #101a23;
+  border-color: #0B5269;
+  color: #f1f1f2; }
+  #contactForm input:focus, #contactForm textarea:focus {
+    border-color: #19c8ff; }
+
+#contactForm .btn-outline-primary {
+  border-color: #19c8ff;
+  color: #19c8ff; }
+  #contactForm .btn-outline-primary:hover {
+    background: #19c8ff;
+    color: #fff; }
 
 #mainLogo {
   margin-bottom: 2em;
@@ -23521,7 +23535,7 @@ span.post-meta-date {
 
 body {
   background-color: #14212a;
-  color: #96acbf; }
+  color: #f1f1f2; }
 
 #mainContainer {
   background-attachment: fixed;

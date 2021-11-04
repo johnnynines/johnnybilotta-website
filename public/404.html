@@ -35,29 +35,43 @@
 </head>
 <body class="night">
 
-
+<div id="floatingLogo">
+    <a href="/"><img src="/img/logo-chip@2x.png" alt="test" /></a>
+</div>
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid justify-content-end">
+        <div id="navbarNav" class="">
+            <div class="col">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile/about/">About</a>
+                    </li>
+                    
+                </ul>
+            </div>  
+        </div>
+    </div>
+</nav>
+<div class="gradient-bg">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-4 col-md-3 col-lg-3 sidebar">
-
-			
-	<div class="sidebar-content">
-		<div id="mainLogo">
-			<a href="/"><img src="/img/logo-monogram-scan@2x.png" alt="test" /></a>
+		<div class="row justify-content-md-center">
+			<div class="col-sm-6">
+				<div class="message-404 text-center">
+					<img src="/img/404.svg" alt="test" />
+					<p>Unfortunately I moved that item or removed it from the site.</p>
+					<p><a href="/">Return to the home page</a></p>
+				</div> 
+			</div>
 		</div>
-
-		<div class="sidebar-description">
-			<p>Digital Product Designer &#43; Developer &#43; Technophile</p>
-		</div>
-
-		
-		<div class="sidebar-freetext mb-4">
-			<p>Hi! My name is Johnny. I design digital products and code things.</p>
-		</div>
-		
-
-		<div class="sidebar-menus sidebar-icons">
-			<div id="socialLinkGroup" class="social-icons my-5 py-3 text-center border-top border-bottom">
+		<div class="row justify-content-md-center">
+			<div class="col-sm-6">
+				<div class="col-6">
+					<div id="socialLinkGroup" class="social-icons my-5 py-3 text-center border-top border-bottom">
     <ul>
         <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#modalContact"><i class="far fa-envelope" aria-hidden="true"></i></a></li>
         <li><a href=""><i class="fab fa-behance"></i></a></li>
@@ -66,43 +80,18 @@
         <li><a href=""><i class="fab fa-instagram"></i></a></li>
     </ul>
 </div>
-		</div>
-
-		
-
-		
-
-		<p class="copyright">&copy; 2021. All rights reserved. </p>
-		<p class="attr">Powered by <a href="http://gohugo.io">Hugo</a>
-
-	</div>
-
-
-			</div>
-			<div class="col-sm-7 col-sm-offset-4 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-3 content">
-
-				<div class="post">
-
-					<div class="post-heading">
-						<h1>404 Not Found</h1>
-						<p>Unfortunately we couldn't find the page you requested.</p>
-						<p><a href="/">Return to Johnny Bilotta | Digital Product Designer</a></p>
-					</div>
-
 				</div>
-
-			</div>
-			<div class="col-sm-1 col-md-3 col-md-4">
 			</div>
 		</div>
 	</div>
+</div>
 
 <div id="modalContact" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalContact" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content px-3">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">Contact Me</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"></i>&nbsp;</span>
         </button>
       </div>
@@ -128,9 +117,12 @@
         </div>
         <div class="form-floating">
             <textarea name="message" id="messageField" class="form-control"></textarea>
+            <label for="messageField">Your message</label>
         </div>
-    
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end form-footer mt-3">
+            <button type="submit" class="btn btn-outline-primary">Send Message</button>
+        </div>
+       
     </form>
 </div>
       </div>
@@ -140,7 +132,7 @@
 </div>
 
 <div id="mobileFooter" class="container-fluid">
-  <div class="row bg-dark p-5">
+  <div class="row section-bg-drk p-5">
     <p class="copyright">&copy; 2021 Johnny Bilotta. All rights reserved. </p>
 </div>
 

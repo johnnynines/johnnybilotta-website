@@ -12,9 +12,11 @@ $drkr: #091922;
 $red: #ff001f;
 $body-bg: #1e2f3d;
 $blu: #19c8ff;
+$blu-tint: #0B5269;
 $blu-new: #14212a;
 $tarmac: #3b4356;
 $blu-mtl: #1A2A36;
+$drk-bdr: #233848;
 
 $primary:       $blu;
 $secondary:     $gray-600;
@@ -25,6 +27,8 @@ $danger:        $red;
 $light:         $blu-mtl;
 $dark:          $blk;
 
+$input-border-color: $blu-tint;
+$input-focus-border-color: $primary;
 
 // Fonts
 $fa-font-path: "../webfonts/";
@@ -55,3 +59,4 @@ $line-height-md: 2.25rem;
 
 // Borders
 
+$input-focus-border-color: $blu;

@@ -58,7 +58,7 @@ body {
 }
 
 ul.navbar-nav {
-    font-family: $mono;
+    font-family: $prometo;
     text-transform: uppercase;
 }
 
@@ -123,5 +123,18 @@ span.post-meta-date {
         a {
             color: $blu;
         }
+    }
+}
+
+#modalContact {
+    .modal-header {
+        // .btn-close {
+        //     color: $wht;
+        //     background-color: $wht;
+        //     border-color: $blu;
+        //     border-width: 1px;
+        //     border-style: solid;
+        //     opacity: 1;
+        // }
     }
 }

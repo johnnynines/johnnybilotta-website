@@ -1,0 +1,21 @@
+#contactForm {
+    input, textarea {
+        background-color: $dark;
+        border-color: $blu-tint;
+        color: $off-wht;
+
+        &:focus {
+            border-color: $blu;
+        }
+    }
+
+    .btn-outline-primary {
+        border-color: $primary;
+        color: $primary;
+
+        &:hover {
+            background: $primary;
+            color: $wht;
+        }
+    }
+}

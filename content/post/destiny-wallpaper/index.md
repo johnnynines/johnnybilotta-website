@@ -1,6 +1,6 @@
 ---
 title: "Wallpaper Wednesday: Destiny 2"
-date: 2021-08-18T20:11:35-04:00
+date: "2021-04-18"
 draft: false
 author: "Johnny Bilotta"
 ---

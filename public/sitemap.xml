@@ -2,37 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/</loc>
-    <lastmod>2021-08-18T20:11:35-04:00</lastmod>
-  </url><url>
-    <loc>/post/</loc>
-    <lastmod>2021-08-18T20:11:35-04:00</lastmod>
-  </url><url>
-    <loc>/post/destiny-wallpaper/</loc>
-    <lastmod>2021-08-18T20:11:35-04:00</lastmod>
-  </url><url>
-    <loc>/post/example-bundle/</loc>
-    <lastmod>2021-08-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/post/hugo-project/</loc>
+    <loc>https://johnnybilotta.com/</loc>
     <lastmod>2021-06-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/sites-found-july/</loc>
+    <loc>https://johnnybilotta.com/post/hugo-project/</loc>
+    <lastmod>2021-06-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnnybilotta.com/post/</loc>
+    <lastmod>2021-06-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnnybilotta.com/post/destiny-wallpaper/</loc>
+    <lastmod>2021-04-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnnybilotta.com/post/sites-found-july/</loc>
     <lastmod>2021-04-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/post/product-viability/</loc>
+    <loc>https://johnnybilotta.com/post/product-viability/</loc>
     <lastmod>2020-08-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/profile/about/</loc>
+    <loc>https://johnnybilotta.com/profile/about/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/profile/</loc>
+    <loc>https://johnnybilotta.com/profile/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
+    <loc>https://johnnybilotta.com/categories/</loc>
   </url><url>
-    <loc>/profile/badges/</loc>
+    <loc>https://johnnybilotta.com/profile/badges/</loc>
   </url><url>
-    <loc>/tags/</loc>
+    <loc>https://johnnybilotta.com/tags/</loc>
   </url>
 </urlset>

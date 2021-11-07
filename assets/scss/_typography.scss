@@ -1,5 +1,14 @@
 // Resets
 
+body {
+    background-color: $blu-new;
+    color: $off-wht;
+    font-size: $font-size-base;
+    font-family: $sans-serif;
+    font-weight: $normal;
+    line-height: 1.75em;
+}
+
 a {
     color: $blu;
     text-decoration: none;
@@ -36,7 +45,7 @@ h1 {
 .single-post {
     h1 {
         color: $wht;
-        font-size: $font-size-xxl;
+        font-size: $font-size-xl;
         text-transform: uppercase;
     }
 
@@ -47,14 +56,13 @@ h1 {
 
     .post-body {
         font-size: $font-size-md;  
-        line-height: $line-height-md; 
+        line-height: $line-height-md;
+        font-weight: $light;
     }
 }
 
 body {
-    font-family: $sans-serif;
-    font-weight: $normal;
-    line-height: 1.75em;
+
 }
 
 ul.navbar-nav {
@@ -124,6 +132,10 @@ span.post-meta-date {
             color: $blu;
         }
     }
+}
+
+code {
+    background: $blu-new;
 }
 
 #modalContact {

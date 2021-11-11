@@ -6,7 +6,17 @@
     <description>Recent content on Johnny Bilotta | Digital Product Designer</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>2021</copyright>
-    <lastBuildDate>Thu, 10 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://johnnybilotta.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://johnnybilotta.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo Project Retrospective</title>
+      <link>https://johnnybilotta.com/post/hugo-project-update/</link>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnnybilotta.com/post/hugo-project-update/</guid>
+      <description>At the beginning of the summer I began a project that I believed would take me about a month to complete. Now, at the beginning of November, I am finally shipping version one of this project. Join me for a retrospective look at making my personal site a Hugo generated static site.
+What Have I Learned First, Hugo’s ease of use is a bit deceiving. On the surface it seems to make short work of putting a static website together.</description>
+    </item>
+    
     <item>
       <title>June Project: Create A Static Site Using Hugo</title>
       <link>https://johnnybilotta.com/post/hugo-project/</link>

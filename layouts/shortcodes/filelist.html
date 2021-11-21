@@ -1,0 +1,9 @@
+<ul class="file-list">
+    {{ range $.Page.Resources.Match "*.jpg" }}
+    <li>
+        <a href="{{ .Permalink }}">
+             <i class="fad fa-download" aria-hidden="true"></i> {{ .Title }}
+        </a>
+    </li>
+    {{ end }}
+</ul>

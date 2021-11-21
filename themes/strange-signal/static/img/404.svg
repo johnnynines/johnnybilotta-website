@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="663" height="550" viewBox="0 0 663 550">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+        font-family: Prometo-Light, Prometo;
+        font-weight: 300;
+      }
+
+      .cls-1 {
+        font-size: 400px;
+      }
+
+      .cls-2 {
+        font-size: 56px;
+      }
+    </style>
+  </defs>
+  <g id="SECTION:_Intro" data-name="SECTION: Intro" transform="translate(-166 -750)">
+    <text id="_404" data-name="404" class="cls-1" transform="translate(166 1148)"><tspan x="0" y="0">404</tspan></text>
+    <text id="ITEM_NOT_FOUND" data-name="ITEM NOT FOUND" class="cls-2" transform="translate(272 1284)"><tspan x="0" y="0">ITEM NOT FOUND</tspan></text>
+  </g>
+</svg>

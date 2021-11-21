@@ -42,7 +42,11 @@
                 <ul class="navbar-nav">
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="/profile/about/">About Me</a>
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile/about/">About</a>
                     </li>
                     
                 </ul>
@@ -51,7 +55,7 @@
     </div>
 </nav>
 <div id="floatingLogo">
-    <a href="https://johnnybilotta.com"><img src="/img/logo-chip@2x.png" alt="test" /></a>
+    <a href="/"><img src="/img/logo-chip@2x.png" alt="test" /></a>
 </div>
 	<div id="singleContent" class="container-fluid single-post">
 
@@ -73,13 +77,13 @@
 				<div id="socialSharingGroup" class="social-icons">
     <ul>
         <li class="mb-2">
-            <a href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fjohnnybilotta.com%2fpost%2fexample-bundle%2f"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.facebook.com/sharer.php?u=%2fpost%2fexample-bundle%2f"><i class="fab fa-facebook"></i></a>
         </li>
         <li class="mb-2">
-            <a href="https://twitter.com/share?url=https%3a%2f%2fjohnnybilotta.com%2fpost%2fexample-bundle%2f&text=Page%20or%20Post%20Bundle%20Example&via=johnnynines" target="_blank" alt="Share on Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://twitter.com/share?url=%2fpost%2fexample-bundle%2f&text=Page%20or%20Post%20Bundle%20Example&via=johnnynines" target="_blank" alt="Share on Twitter"><i class="fab fa-twitter"></i></a>
         </li>
         <li class="mb-2">
-            <a href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fjohnnybilotta.com%2fpost%2fexample-bundle%2f&title=Page%20or%20Post%20Bundle%20Example"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/shareArticle?url=%2fpost%2fexample-bundle%2f&title=Page%20or%20Post%20Bundle%20Example"><i class="fab fa-linkedin"></i></a>
         </li>
         <li class="mb-2">
             <a href="https://pinterest.com/pin/create/bookmarklet/?media=[post-img]&url=[post-url]&is_video=[is_video]&description=[post-title]"><i class="fab fa-pinterest"></i></a>
@@ -89,12 +93,60 @@
 	
 			</div>
 			
-			<div class="col-sm-6 content">
+			<div class="col-sm-7 content">
 
-				<div class="post-body">
-					<p>If I start writing in here will it just go to the front of the damn thing and be part of the content that gets pulled in?</p>
-<p>Because if that is the case than I am sold. I mean that is yet another breakthrough in learning about Hugo.</p>
-<p>Man, this has been a lot more difficult than I had originally thought. However, I am beginning to enjoy it. The learning curve is quit a bit but I think I am getting the hang of it now.</p>
+				<div class="post-body mb-5 pb-5">
+					<p>If I start writing in here will it just go to the front of the damn thing and be part of the content that gets pulled in? Because if that is the case than I am sold. I mean that is yet another breakthrough in learning about <strong>Hugo</strong>.</p>
+<p>Man, this has been a lot more difficult than I had originally thought. However, I am beginning to enjoy it. The learning curve is quit a bit but I think I am getting the hang of it now. The last trick to learn is how to add inline images and we are <em>golden</em></p>
+<h2 id="need-to-place-some-headings-in-here">Need To Place Some Headings In Here</h2>
+<p>The next bit is just some markup for testing. Beginning with a <em>blockquote</em>:</p>
+<blockquote>
+<p>&ldquo;Just want to say that this blockquote, looks fantastic&rdquo;</p>
+</blockquote>
+<h3 id="and-here-we-are-going-to-show-an-ordered-list">And here we are going to show an Ordered List</h3>
+<ol>
+<li>Item One will start us off</li>
+<li>Item Two shows we are still on the right track</li>
+<li>We can end it here I think. We get the idea</li>
+<li>Well maybe one more item to just check spaceing and all</li>
+<li>Maybe this could be the end.</li>
+<li>This is the last one I promise</li>
+</ol>
+<h3 id="we-cannot-be-without-unordered-lists-either">We cannot be without Unordered Lists either</h3>
+<ul>
+<li>Item One will start us off</li>
+<li>Item Two shows we are still on the right track</li>
+<li>We can end it here I think. We get the idea</li>
+<li>Well maybe one more item to just check spaceing and all</li>
+<li>Maybe this could be the end.</li>
+<li>This is the last one I promise</li>
+</ul>
+<hr>
+<h3 id="code">Code</h3>
+<p>Now let&rsquo;s take a look at what <code>code</code> will look like in our posts. That was a good example of inline <code>code</code> but what about when we have more than one line. Also known as <em>fenced code block</em>:</p>
+<pre tabindex="0"><code>function conFunction(a,b) {
+    theObject.logo(&quot;LogoName&quot;);
+}
+</code></pre><hr>
+<h3 id="tables">Tables</h3>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text</td>
+</tr>
+</tbody>
+</table>
 
 				</div>
 
@@ -105,10 +157,10 @@
 
 <div id="modalContact" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalContact" aria-hidden="true">
   <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal-content px-3">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">Contact Me</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"></i>&nbsp;</span>
         </button>
       </div>
@@ -134,9 +186,12 @@
         </div>
         <div class="form-floating">
             <textarea name="message" id="messageField" class="form-control"></textarea>
+            <label for="messageField">Your message</label>
         </div>
-    
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end form-footer mt-3">
+            <button type="submit" class="btn btn-outline-primary">Send Message</button>
+        </div>
+       
     </form>
 </div>
       </div>
@@ -146,7 +201,7 @@
 </div>
 
 <div id="mobileFooter" class="container-fluid">
-  <div class="row bg-dark p-5">
+  <div class="row section-bg-drk p-5">
     <p class="copyright">&copy; 2021 Johnny Bilotta. All rights reserved. </p>
 </div>
 
@@ -159,7 +214,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<script src="https://johnnybilotta.com/js/bootstrap.min.js"></script>
+<script src="//js/bootstrap.min.js"></script>
 
 <script src="/js/main.js"></script>
 

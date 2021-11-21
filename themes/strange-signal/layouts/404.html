@@ -1,28 +1,25 @@
 {{ partial "header.html" . }}
-
+{{ partial "floating-logo.html" .}}
+{{ partial "main-nav.html" .}}
+<div class="gradient-bg">
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-4 col-md-3 col-lg-3 sidebar">
-
-			{{ partial "sidebar-content.html" . }}
-
+		<div class="row justify-content-md-center">
+			<div class="col-sm-6">
+				<div class="message-404 text-center">
+					<img src="{{ "img/404.svg" | relURL }}" alt="test" />
+					<p>Unfortunately I moved that item or removed it from the site.</p>
+					<p><a href="{{ .Site.BaseURL }}">Return to the home page</a></p>
+				</div> 
 			</div>
-			<div class="col-sm-7 col-sm-offset-4 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-3 content">
-
-				<div class="post">
-
-					<div class="post-heading">
-						<h1>404 Not Found</h1>
-						<p>Unfortunately we couldn't find the page you requested.</p>
-						<p><a href="{{ .Site.BaseURL }}">Return to {{ .Site.Title }}</a></p>
-					</div>
-
+		</div>
+		<div class="row justify-content-md-center">
+			<div class="col-sm-6">
+				<div class="col-6">
+					{{ partial "social.html" . }}
 				</div>
-
-			</div>
-			<div class="col-sm-1 col-md-3 col-md-4">
 			</div>
 		</div>
 	</div>
+</div>
 
 {{ partial "footer.html" . }}

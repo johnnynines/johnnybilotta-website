@@ -4,25 +4,35 @@
 	</div>
 	{{ partial "main-nav.html" .}}
 
-	<div class="container-fluid">
+	<div id="mainContainer" class="container-fluid">
 		<div class="row">
-			<div class="col-sm-4 col-md-3 col-lg-3 sidebar">
+			<div id="leftSidebar" class="col-sm-3 col-md-3 col-lg-3 sidebar ps-5">
 
-			{{ partial "sidebar-content.html" . }}
-
+				{{ partial "sidebar-content.html" . }}
+	
 			</div>
-			<div class="col-sm-7 col-sm-offset-4 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-3 content">
+
+			<div class="col-md-7 offset-md-1 content">
 
 				{{ range .Paginator.Pages }}
 				<div class="post">
-
-					<div class="post-heading">
-						<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-						<span>{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
+					<div class="feature-img-container">
+						{{ if .Params.featured_image }}
+						{{ range .Resources.Match "featured-image.jpg"}}
+							<img class="featured-image" src="{{ .Permalink }}" />
+						{{ end }}
+						{{ else }}
+							<img class="featured-image" src="{{ .Site.Params.featuredImageDefault | absURL }}" />
+						{{ end }}
 					</div>
-
-					{{ .Content }}
-
+					<div class="post-heading mb-3">
+						
+						<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+						<span class="post-date">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
+					</div>
+					<div class="post-summary">
+						{{ .Summary }}
+					</div>
 				</div>
 				{{ end }}
 

@@ -1,0 +1,17 @@
+@keyframes scaleUp {
+    from {
+        font-size: 100%;
+    }
+    to {
+        font-size: 125%;
+    }
+}
+
+#socialLinkGroup {
+    i {
+        &:hover {
+            animation-name: scaleUp;
+            animation-duration: .5s;
+        }
+    }
+}

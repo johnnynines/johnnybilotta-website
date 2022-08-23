@@ -28,5 +28,5 @@ theme = "strange-signal"
 order = [".jpg$", ".png$"]
 
 [[deployment.targets]]
-name = "production"
+name = "aws-s3"
 URL = "s3://johnnybilotta.com?region=us-east-1"

@@ -61,10 +61,9 @@ h1 {
     }
 }
 
-body {
-
+ul.tiles-img {
+    h2 { font-size: large; }
 }
-
 ul.navbar-nav {
     font-family: $prometo;
     text-transform: uppercase;
@@ -117,6 +116,12 @@ span.post-meta-date {
    font-size: $font-size-md;
    font-weight: $med;
    color: $dkr-grey;
+}
+
+.tile {
+    .post-date {
+        font-size: $font-size-base;
+    }
 }
 
 // Lists

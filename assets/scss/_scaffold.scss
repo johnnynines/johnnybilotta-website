@@ -39,7 +39,7 @@
 }
 
 #mainNav {
-    background-color: rgba(9, 25, 34, 0.85);
+    background-color: rgba(6, 16, 22, 0.85);
 }
 
 .border-top {
@@ -74,8 +74,33 @@
     display: none;
 }
 
+#galleryChild {
+    margin-top: 5em;
+}
+
+.post-list {
+    ul {
+        list-style: none;
+        margin: 0;
+        li {
+            background:rgba(9, 25, 34, 0.85);
+            display: inline-block;
+        }
+    }
+}
+
+.tile {
+    // height: 10em;
+    // width: 10em;
+}
+
+.dark-bg {
+    background-color: $drkr;
+}
+
 @include media-breakpoint-up(md) {
     #leftSidebar {
         display: block;
     }
 }
+

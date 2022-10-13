@@ -23440,6 +23440,9 @@ h1, .h1 {
   line-height: 2.25rem;
   font-weight: 200; }
 
+ul.tiles-img h2, ul.tiles-img .h2 {
+  font-size: large; }
+
 ul.navbar-nav {
   font-family: prometo, sans-serif;
   text-transform: uppercase; }
@@ -23475,6 +23478,9 @@ span.post-meta-date {
   font-weight: 300;
   color: #6d7d8b; }
 
+.tile .post-date {
+  font-size: 1rem; }
+
 .ul {
   list-style: none; }
 
@@ -23509,7 +23515,7 @@ code {
 #floatingLogo {
   position: fixed;
   top: 0;
-  left: 0%;
+  left: -6em;
   z-index: 2000; }
   #floatingLogo img {
     width: 25rem; }
@@ -23518,6 +23524,10 @@ code {
   height: 260px;
   overflow: hidden;
   margin-bottom: 1em; }
+
+.tile-feature-img-container {
+  height: 6em;
+  overflow: hidden; }
 
 .featured-image {
   width: 100%; }
@@ -23531,6 +23541,19 @@ code {
 .post-body figure .full {
   position: relative;
   width: 100%; }
+
+.img-list {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative; }
+  .img-list .img-desc {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #96acbf;
+    height: 2em;
+    position: absolute;
+    bottom: .5em;
+    left: .5em;
+    right: 0;
+    width: 40%; }
 
 @media (max-width: 767.98px) {
   #mobileLogo {
@@ -23571,7 +23594,7 @@ code {
     padding-bottom: 1em; }
 
 #mainNav {
-  background-color: rgba(9, 25, 34, 0.85); }
+  background-color: rgba(6, 16, 22, 0.85); }
 
 .border-top {
   border-top: 1px dotted #4e6273 !important; }
@@ -23593,6 +23616,19 @@ code {
 
 #leftSidebar {
   display: none; }
+
+#galleryChild {
+  margin-top: 5em; }
+
+.post-list ul {
+  list-style: none;
+  margin: 0; }
+  .post-list ul li {
+    background: rgba(9, 25, 34, 0.85);
+    display: inline-block; }
+
+.dark-bg {
+  background-color: #091922; }
 
 @media (min-width: 768px) {
   #leftSidebar {

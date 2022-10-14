@@ -9,14 +9,12 @@
 		<div id="galleryList">
 			<div class="gallery-title dark-bg row">
 				<div class="offset-lg-3 col-lg-9">
-					<h1>Textures</h1>	
+					<h1>Textures</h1>
+					{{ partial "breadcrumb.html" .}}
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-3">
-
-				</div>
-				<div class="col-sm-9 col-sm-offset-3 col-md-8 col-md-offset-3 col-lg-9 col-lg-offset-3 content">
+				<div class="col-sm-10 offset-sm-2 col-md-8 offset-md-3 col-lg-10 offset-lg-2 content">
 					<div class="post-list my-5">
 						<ul class="tiles-img">
 							{{ range .Paginator.Pages }}

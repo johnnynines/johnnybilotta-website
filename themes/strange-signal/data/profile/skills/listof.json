@@ -11,5 +11,10 @@
         "SCSS/CSS",
         "Python",
         "Bash"
+    ],
+    "Systems": [
+        "Mac, Linux and Windows Administration",
+        "Network adminstration",
+        "AWS Setup and administration"
     ]
 }

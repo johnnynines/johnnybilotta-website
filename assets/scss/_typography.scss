@@ -111,6 +111,14 @@ span.post-meta-date {
     }
 }
 
+#skillList {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+
 .post-date {
    font-family: $prometo;
    font-size: $font-size-md;

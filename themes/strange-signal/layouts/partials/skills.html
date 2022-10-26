@@ -1,5 +1,26 @@
-<ul>
-    {{ range .Design }}
-        <li>{{ . }}</li>
-    {{ end }}
-</ul>
+<div class="col offset-sm-1">
+    <h5><i class="far fa-drafting-compass me-2"></i>Design</h5>
+    <ul class="ps-3">
+        {{ range .Design }}
+            <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+</div>
+
+<div class="col">
+    <h5><i class="far fa-brackets-curly me-2"></i>Development</h5>
+    <ul class="ps-3">
+        {{ range .Development }}
+            <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+</div>
+
+<div class="col">
+    <h5><i class="far fa-computer-classic me-2"></i>Systems</h5>
+    <ul class="ps-3">
+        {{ range .Systems }}
+            <li>{{ . }}</li>
+        {{ end }}
+    </ul>
+</div>

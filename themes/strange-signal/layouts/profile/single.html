@@ -13,10 +13,17 @@
                 {{ end }}
             </div>
         </div>
-        <div class="row section-bg-drk">
-            {{ range $.Site.Data.profile.skills.listof }}
+    </div>
+<div class="section-bg-drk py-5">
+    <div class="container">
+        <div id="skillList" class="row">
+            <div class="col-sm-2 text-end">
+                <h4>Skills</h4>
+            </div>
+            {{ range $.Site.Data.profile.skills }}
                 {{ partial "skills.html" . }}
             {{ end }}
         </div>
-    </div> 
+    </div>
+</div>
 {{ partial "footer" .}}

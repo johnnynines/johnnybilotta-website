@@ -23472,6 +23472,10 @@ span.post-meta-date {
       margin: 0 .5rem;
       padding: 0.25rem; }
 
+#skillList ul {
+  list-style: none;
+  padding: 0; }
+
 .post-date {
   font-family: prometo, sans-serif;
   font-size: 1.2rem;

@@ -1,26 +1,26 @@
 <div class="col offset-sm-1">
-    <h5><i class="far fa-drafting-compass me-2"></i>Design</h5>
-    <ul class="ps-3">
+    <h5>Design</h5>
+    <ul class="fa-ul">
         {{ range .Design }}
-            <li>{{ . }}</li>
+        <li><span class="fa-li"><i class="fal fa-circle"></i></span>{{ . }}</li>
         {{ end }}
     </ul>
 </div>
 
 <div class="col">
-    <h5><i class="far fa-brackets-curly me-2"></i>Development</h5>
-    <ul class="ps-3">
+    <h5></i>Development</h5>
+    <ul class="fa-ul">
         {{ range .Development }}
-            <li>{{ . }}</li>
+            <li><span class="fa-li"><i class="fal fa-circle"></i></span>{{ . }}</li>
         {{ end }}
     </ul>
 </div>
 
 <div class="col">
-    <h5><i class="far fa-computer-classic me-2"></i>Systems</h5>
-    <ul class="ps-3">
+    <h5>Systems</h5>
+    <ul class="fa-ul">
         {{ range .Systems }}
-            <li>{{ . }}</li>
+        <li><span class="fa-li"><i class="fal fa-circle"></i></span>{{ . }}</li>
         {{ end }}
     </ul>
 </div>

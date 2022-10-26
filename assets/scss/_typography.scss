@@ -112,9 +112,18 @@ span.post-meta-date {
 }
 
 #skillList {
+    h5 {
+        font-size: $font-size-md;
+    }
     ul {
         list-style: none;
         padding: 0;
+        margin-left: 1.5em;
+
+        i.fa-circle {
+            color: $blu;
+            font-size: $font-size-xsm;
+        }
     }
 }
 

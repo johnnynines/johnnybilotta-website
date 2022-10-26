@@ -23396,6 +23396,22 @@ readers do not read off random characters that represent icons */
 .fad.fa-yin-yang:after {
   content: "\10f6ad"; }
 
+/*!
+ * Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: block;
+  src: url("../webfonts/fa-light-300.eot");
+  src: url("../webfonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-light-300.woff2") format("woff2"), url("../webfonts/fa-light-300.woff") format("woff"), url("../webfonts/fa-light-300.ttf") format("truetype"), url("../webfonts/fa-light-300.svg#fontawesome") format("svg"); }
+
+.fal {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 300; }
+
 body {
   background-color: #142734;
   color: #f1f1f2;
@@ -23472,9 +23488,16 @@ span.post-meta-date {
       margin: 0 .5rem;
       padding: 0.25rem; }
 
+#skillList h5, #skillList .h5 {
+  font-size: 1.2rem; }
+
 #skillList ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin-left: 1.5em; }
+  #skillList ul i.fa-circle {
+    color: #19c8ff;
+    font-size: 0.5rem; }
 
 .post-date {
   font-family: prometo, sans-serif;

@@ -1,0 +1,11 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        {{ $rellink := "" }}
+        {{ range (split .RelPermalink "/") }}
+            {{ if gt ( len . ) 0 -}}
+                {{ $rellink = printf "%s/%s" $rellink . }}
+                <li class="breadcrumb-item"><a href="{{ $rellink }}">{{ humanize . }}</a></li>
+            {{ end }}
+        {{ end }}        
+    </ol>
+</nav>

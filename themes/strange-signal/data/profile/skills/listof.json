@@ -1,0 +1,15 @@
+{
+    "Design": [
+        "User Interface Design",
+        "User Experience Design",
+        "Mobile Design",
+        "Web Design"
+    ],
+    "Development":[
+        "JavaScript",
+        "HTML",
+        "SCSS/CSS",
+        "Python",
+        "Bash"
+    ]
+}

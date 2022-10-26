@@ -67,6 +67,13 @@
     }
 }
 
+.icon-fragment {
+    i {
+        font-size: $font-size-xxl;
+        text-align: center;
+    }
+}
+
 
 @include media-breakpoint-down(md){
     #mobileLogo {

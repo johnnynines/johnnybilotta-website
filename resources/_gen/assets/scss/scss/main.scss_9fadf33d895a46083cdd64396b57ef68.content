@@ -23555,6 +23555,10 @@ code {
     right: 0;
     width: 40%; }
 
+.icon-fragment i {
+  font-size: 4rem;
+  text-align: center; }
+
 @media (max-width: 767.98px) {
   #mobileLogo {
     display: block; }

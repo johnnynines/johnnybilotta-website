@@ -23488,8 +23488,11 @@ span.post-meta-date {
       margin: 0 .5rem;
       padding: 0.25rem; }
 
-#skillList h5, #skillList .h5 {
+#skillList h2, #skillList .h2 {
   font-size: 1.2rem; }
+
+#skillList h3, #skillList .h3 {
+  font-size: 1rem; }
 
 #skillList ul {
   list-style: none;

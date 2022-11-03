@@ -23412,12 +23412,29 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Pro';
   font-weight: 300; }
 
+/*!
+ * Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../webfonts/fa-solid-900.eot");
+  src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900; }
+
 body {
   background-color: #142734;
-  color: #f1f1f2;
+  color: #dddddd;
   font-size: 1rem;
-  font-family: proxima-nova, sans-serif;
-  font-weight: 400;
+  font-family: futura-pt, sans-serif;
+  font-weight: 100;
   line-height: 1.75em; }
 
 a {
@@ -23431,10 +23448,27 @@ a {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: prometo, sans-serif;
-  font-weight: 300; }
+  font-weight: 700;
+  text-transform: uppercase; }
 
 h1, .h1 {
   color: #ff001f; }
+
+h2, .h2 {
+  font-size: 1.5rem; }
+
+h3, .h3 {
+  font-size: 1.2rem; }
+
+p {
+  font-size: 1.2rem; }
+
+blockquote {
+  font-family: sommet, sans-serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2em; }
 
 .post h1, .post .h1 {
   color: #fff;
@@ -23449,11 +23483,19 @@ h1, .h1 {
 
 .single-post h2, .single-post .h2 {
   color: #fff;
-  margin: 2rem 0 1rem 0; }
+  margin: 2rem 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 700; }
+  .single-post h2::after, .single-post .h2::after {
+    content: "";
+    display: block;
+    width: 15%;
+    padding-top: .5em;
+    border-bottom: 1px solid #ff001f; }
 
 .single-post .post-body {
   font-size: 1.2rem;
-  line-height: 2.25rem;
+  line-height: 1.75em;
   font-weight: 200; }
 
 ul.tiles-img h2, ul.tiles-img .h2 {
@@ -23496,8 +23538,7 @@ span.post-meta-date {
 
 #skillList ul {
   list-style: none;
-  padding: 0;
-  margin-left: 1.5em; }
+  padding: 0; }
   #skillList ul i.fa-circle {
     color: #19c8ff;
     font-size: 0.5rem; }
@@ -23525,7 +23566,7 @@ code {
 #contactForm input, #contactForm textarea {
   background-color: #101a23;
   border-color: #0B5269;
-  color: #f1f1f2; }
+  color: #dddddd; }
   #contactForm input:focus, #contactForm textarea:focus {
     border-color: #19c8ff; }
 
@@ -23562,9 +23603,6 @@ code {
 .featured-image {
   width: 100%; }
 
-#profileImg img {
-  width: 15rem; }
-
 #mobileLogo {
   display: none; }
 
@@ -23588,6 +23626,10 @@ code {
 .icon-fragment i {
   font-size: 4rem;
   text-align: center; }
+
+.jb-icon {
+  width: 30%;
+  height: 30%; }
 
 @media (max-width: 767.98px) {
   #mobileLogo {

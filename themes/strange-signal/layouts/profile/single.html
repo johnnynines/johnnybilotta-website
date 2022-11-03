@@ -1,25 +1,46 @@
 {{ partial "header" .}}
-    {{ partial "main-nav.html" .}}
-    {{ partial "floating-logo.html" .}}
-    <div id="profile" class="content-profile container">
-        <div class="row my-5">
-            <div class="col-sm-4">
-                {{ partial "profile-pic.html" .}}
-                {{ partial "social.html" . }}
+{{ partial "main-nav.html" .}}
+{{ partial "floating-logo.html" .}}
+
+<div id="profile" class="content-profile container">
+    <div class="row my-5">
+        <div class="col-lg-4 col-sm-12">
+            {{ partial "profile-pic.html" .}}
+            {{ partial "social.html" . }}
+        </div>
+        <div class="col-lg-8 col-sm-12">
+            {{ with .Site.GetPage "/profile/about.md"}}
+                {{ .Content }}
+            {{ end }}
+        </div>
+    </div>
+</div>
+<div class="section-bg-drk py-5">
+    <div id="missionStatement" class="container">
+        <div class="row">
+            <div class="col align-self-center text-center mb-3">
+                <h4>Mission Statement</h4>
             </div>
-            <div class="col-sm-8" >
-                {{ with .Site.GetPage "/profile/about.md"}}
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-9">
+                <blockquote class="blockquote">
+                {{ with .Site.GetPage "/profile/mission-statement.md"}}
                     {{ .Content }}
                 {{ end }}
+                </blockquote>
             </div>
         </div>
     </div>
-<div class="section-bg-drk py-5">
-    <div class="container">
-        <div id="skillList" class="row">
-            <div class="col-2 text-end border-end">
+</div>
+<div class="py-5">
+    <div id="skillList" class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-3">
                 <h4>Professional Skills</h4>
             </div>
+        </div>
+        <div class="row">
             {{ range $.Site.Data.profile.skills }}
                 {{ partial "skills.html" . }}
             {{ end }}

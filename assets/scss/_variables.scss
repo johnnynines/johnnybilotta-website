@@ -2,7 +2,7 @@
 
 $blk: #101a23;
 $wht: #fff;
-$off-wht: #f1f1f2;
+$off-wht: #dddddd;
 $off-wht-tint: #e8e8e8;
 $lgt-grey: #96acbf;
 $mtl-grey: #4e6273;
@@ -32,6 +32,8 @@ $input-focus-border-color: $primary;
 
 // Fonts
 $fa-font-path: "../webfonts/";
+$futura: futura-pt, sans-serif;
+$sommet: sommet, sans-serif;
 $input-sans-reg: input-sans, sans-serif;
 $input-sans-condensed: input-sans-condensed, sans-serif;
 $input-sans-narrow: input-sans-narrow, sans-serif;
@@ -45,6 +47,7 @@ $thin:          100;
 $light:         200;
 $med:           300;
 $normal:        400;
+$book:          500;
 $bold:          700;
 
 $font-size-xsm: 0.5rem;

@@ -8,11 +8,18 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>{{ .Title }} - {{ .Site.Params.description }}</title>
 
-	<!-- Bootstrap -->
+	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-	<link rel="stylesheet" href="https://use.typekit.net/lqf3uyv.css">
-	<!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/bootstrap.min.css"> -->
-	<!-- <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/main.css"> -->
+	<link rel="stylesheet" href="https://use.typekit.net/kik8ktc.css">
+	<!-- reCAPTCHA -->
+	<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lcfd9QiAAAAAG87EVM4fmhCVHNCEHMaOPLOscSZ"></script>
+	<script>
+		grecaptcha.enterprise.ready(function() {
+			grecaptcha.enterprise.execute('6Lcfd9QiAAAAAG87EVM4fmhCVHNCEHMaOPLOscSZ', {action: 'homepage'}).then(function(token) {
+			document.getElementById('captchaResponse').value = token;
+			});
+		});
+	</script>
 	<!--<style type="text/css" media="all">
 		# Optional: comment out strange-case.css above, minify it with YUICompressor and paste inline styles here to lose a request...
 	</style>-->

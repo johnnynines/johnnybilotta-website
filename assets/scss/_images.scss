@@ -34,7 +34,7 @@
 
 #profileImg {
     img {
-        width: 15rem;
+        
     }
 }
 
@@ -72,6 +72,11 @@
         font-size: $font-size-xxl;
         text-align: center;
     }
+}
+
+.jb-icon {
+    width: 30%;
+    height: 30%;
 }
 
 

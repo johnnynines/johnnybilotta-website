@@ -36,13 +36,8 @@
 <div class="py-5">
     <div id="skillList" class="container">
         <div class="row">
-            <div class="col-lg-12 text-center mb-3">
-                <h4>Professional Skills</h4>
-            </div>
-        </div>
-        <div class="row">
             {{ range $.Site.Data.profile.skills }}
-                {{ partial "skills.html" . }}
+                {{ partial "skill-section.html" . }}
             {{ end }}
         </div>
     </div>

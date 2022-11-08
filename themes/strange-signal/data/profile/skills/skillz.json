@@ -1,0 +1,12 @@
+{
+    "Design": [
+        {"skill": "UX Design", "level": "98%"},
+        {"skill": "UI Design", "level": "98%"},
+        {"skill": "Design Systems", "level": "90%"},
+        {"skill": "Information Design", "level": "90%"}
+    ],
+    "Development": [
+        {"skill": "JavaScript", "level": "80%"},
+        {"skill": "HTML/SCSS", "level": "90%"}
+    ] 
+}

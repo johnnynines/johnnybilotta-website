@@ -24,7 +24,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-9">
-                <blockquote class="blockquote">
+                <blockquote>
                 {{ with .Site.GetPage "/profile/mission-statement.md"}}
                     {{ .Content }}
                 {{ end }}
@@ -34,11 +34,19 @@
     </div>
 </div>
 <div class="py-5">
-    <div id="skillList" class="container">
-        <div class="row">
-            {{ range $.Site.Data.profile.skills }}
+    <div id="aboutContact" class="container">
+        <div class="row justify-content-center">
+            <div class="col align-self-center text-center mb-3">
+                <h4>Contact Me</h4>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-9">
+                {{ partial "contact-form" .}}
+            </div>
+            <!-- {{ range $.Site.Data.profile.skills }}
                 {{ partial "skill-section.html" . }}
-            {{ end }}
+            {{ end }} -->
         </div>
     </div>
 </div>

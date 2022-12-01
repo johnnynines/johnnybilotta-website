@@ -23433,7 +23433,7 @@ body {
   background-color: #142734;
   color: #dddddd;
   font-size: 1rem;
-  font-family: futura-pt, sans-serif;
+  font-family: proxima-nova, sans-serif;
   font-weight: 100;
   line-height: 1.75em; }
 
@@ -23448,7 +23448,7 @@ a {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: prometo, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase; }
 
 h1, .h1 {
@@ -23466,13 +23466,15 @@ p {
 blockquote {
   font-family: sommet, sans-serif;
   font-style: italic;
-  font-size: 1.5rem;
   font-weight: 100;
-  line-height: 2em; }
+  line-height: 2.50rem; }
+  blockquote p {
+    font-size: 2rem; }
 
 .post h1, .post .h1 {
   color: #fff;
-  margin-bottom: 0.15rem; }
+  margin-bottom: 0.15rem;
+  font-family: prometo, sans-serif; }
   .post h1 a, .post .h1 a {
     color: #ff001f; }
 
@@ -23544,7 +23546,7 @@ span.post-meta-date {
     font-size: 0.5rem; }
 
 .post-date {
-  font-family: prometo, sans-serif;
+  font-family: proxima-nova, sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
   color: #6d7d8b; }
@@ -23576,6 +23578,9 @@ code {
   #contactForm .btn-outline-primary:hover {
     background: #19c8ff;
     color: #fff; }
+
+#aboutContact #contactForm #messageField {
+  min-height: 10em; }
 
 #mainLogo {
   margin-bottom: 2em;
@@ -23719,7 +23724,7 @@ code {
     #leftSidebar .sidebar-content .sidebar-description {
       border-top: 1px dotted #4e6273;
       border-bottom: 1px dotted #4e6273;
-      font-family: input-sans, sans-serif;
+      font-family: prometo, sans-serif;
       font-weight: 200;
       margin-bottom: 2em;
       padding: 1em 0;
@@ -23728,10 +23733,9 @@ code {
         margin-bottom: 0;
         text-align: center; }
     #leftSidebar .sidebar-content .sidebar-freetext {
-      font-family: input-sans, sans-serif;
+      font-family: proxima-nova, sans-serif;
       font-size: 0.75rem;
-      font-weight: 200;
-      text-transform: uppercase; }
+      font-weight: 200; }
   #leftSidebar .sidebar-content {
     display: block; }
   @media (min-width: 768px) {

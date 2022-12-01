@@ -9,7 +9,7 @@
         .sidebar-description {
             border-top: 1px dotted $mtl-grey;
             border-bottom: 1px dotted $mtl-grey;
-            font-family: $titles;
+            font-family: $prometo;
             font-weight: $light;
             margin-bottom: 2em;
             padding: 1em 0;
@@ -22,10 +22,9 @@
         }
 
         .sidebar-freetext {
-            font-family: $input-sans-reg;
+            font-family: $sans-serif;
             font-size: $font-size-sm;
             font-weight: $light;
-            text-transform:uppercase;
         }
     }
 

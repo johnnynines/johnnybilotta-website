@@ -1,2 +1,3 @@
 .gulpfile
 content/post/example-bundle
+public/*

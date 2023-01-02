@@ -1,0 +1,18 @@
+<div id="mobileMenu" class="mobile-overlay hidden">
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-1"><a href="javascript:void(0)" class="close-overlay-trigger"><i class="fa fa-times"></i></a></div>
+        </div>
+    </div>
+    <div class="text-center">
+        <div class="">
+            <ul class="">
+                {{ range .Site.Menus.main }}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{.URL}}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,70 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://johnnybilotta.com/post/hugo-project-update/</loc>
-    <lastmod>2021-11-10T00:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://johnnybilotta.com/</loc>
+    <lastmod>2022-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnnybilotta.com/profile/mission-statement/</loc>
+    <lastmod>2022-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnnybilotta.com/profile/</loc>
+    <lastmod>2022-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnnybilotta.com/profile/about/</loc>
+    <lastmod>2022-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnnybilotta.com/post/hugo-project-update/</loc>
     <lastmod>2021-11-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://johnnybilotta.com/post/</loc>
     <lastmod>2021-11-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://johnnybilotta.com/post/hugo-project/</loc>
     <lastmod>2021-06-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://johnnybilotta.com/post/destiny-wallpaper/</loc>
     <lastmod>2021-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://johnnybilotta.com/post/sites-found-july/</loc>
     <lastmod>2021-04-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://johnnybilotta.com/post/product-viability/</loc>
     <lastmod>2020-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://johnnybilotta.com/profile/about/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://johnnybilotta.com/profile/</loc>
-    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://johnnybilotta.com/profile/skills/</loc>
+  </url><url>
     <loc>https://johnnybilotta.com/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>https://johnnybilotta.com/profile/badges/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://johnnybilotta.com/profile/icon-content/product-design/</loc>
+  </url><url>
+    <loc>https://johnnybilotta.com/profile/icon-content/product-development/</loc>
+  </url><url>
+    <loc>https://johnnybilotta.com/profile/icon-content/product-strategy/</loc>
+  </url><url>
     <loc>https://johnnybilotta.com/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://johnnybilotta.com/textures/texture_pack_01/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://johnnybilotta.com/textures/texture_pack_02/</loc>
+  </url><url>
+    <loc>https://johnnybilotta.com/textures/texture_pack_03/</loc>
+  </url><url>
+    <loc>https://johnnybilotta.com/textures/texture_pack_04/</loc>
+  </url><url>
+    <loc>https://johnnybilotta.com/textures/texture_pack_05/</loc>
+  </url><url>
     <loc>https://johnnybilotta.com/textures/</loc>
   </url>
-  
 </urlset>

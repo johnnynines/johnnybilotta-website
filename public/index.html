@@ -4,15 +4,22 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="generator" content="Hugo 0.68.3" />
+	<meta name="generator" content="Hugo 0.105.0">
 	
 	<title>Johnny Bilotta | Digital Product Designer - Digital Product Designer &#43; Developer &#43; Technophile</title>
 
 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-	<link rel="stylesheet" href="https://use.typekit.net/lqf3uyv.css">
+	<link rel="stylesheet" href="https://use.typekit.net/kik8ktc.css">
 	
-	
+	<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lcfd9QiAAAAAG87EVM4fmhCVHNCEHMaOPLOscSZ"></script>
+	<script>
+		grecaptcha.enterprise.ready(function() {
+			grecaptcha.enterprise.execute('6Lcfd9QiAAAAAG87EVM4fmhCVHNCEHMaOPLOscSZ', {action: 'homepage'}).then(function(token) {
+			document.getElementById('captchaResponse').value = token;
+			});
+		});
+	</script>
 	
 
 	
@@ -166,8 +173,9 @@ What Have I Learned First, Hugo’s ease of use is a bit deceiving. On the surfa
 					</div>
 					<div class="post-summary">
 						Been a minute since I published one of these. Below are some sites I found during my travels around the internet, that digital product designers and fellow technophiles may find helpful or interesting.
-Haikei App   https://haikei.app/
+Haikei App https://haikei.app/
 Haikei App is the evolution of two web projects by Z Creative Labs (https://zcreativelabs.com/). It is a FREE web app that helps produce unique SVG design assets for use in your web projects.
+Evil Martians - How to Favicon https://evilmartians.
 					</div>
 				</div>
 				
@@ -194,8 +202,26 @@ The best products and services in history are supremely successful because they 
 
 				<div class="text-center">
 					
-
-
+    <ul class="pagination pagination-default">
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      </li>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item active">
+        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+      </li>
+      <li class="page-item">
+        <a href="/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      </li>
+      <li class="page-item">
+        <a href="/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      </li>
+    </ul>
 				</div>
 
 			</div>
@@ -234,6 +260,9 @@ The best products and services in history are supremely successful because they 
             <textarea name="message" id="messageField" class="form-control"></textarea>
             <label for="messageField">Your message</label>
         </div>
+        
+        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+
         <div class="d-grid gap-2 d-md-flex justify-content-md-end form-footer mt-3">
             <button type="submit" class="btn btn-outline-primary">Send Message</button>
         </div>

@@ -175,15 +175,28 @@ span.post-meta-date {
    color: $dkr-grey;
 }
 
-.tile {
+.card {
     .post-date {
+        font-size: $font-size-base;
+    }
+
+    p.card-text {
+        font-size: $font-size-base;
+        line-height: 1.45rem;
+    }
+}
+
+.img-desc {
+    p {
         font-size: $font-size-base;
     }
 }
 
 // Lists
-.ul {
+ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .file-list {
@@ -193,6 +206,12 @@ span.post-meta-date {
         a {
             color: $blu;
         }
+    }
+}
+
+.gallery-info {
+    li {
+        border-bottom: 1px dotted $mtl-grey;     
     }
 }
 

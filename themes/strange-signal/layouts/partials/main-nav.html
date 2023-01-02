@@ -3,6 +3,7 @@
         <div id="navbarNav" class="">
             <div class="col">
                 <ul class="navbar-nav">
+                    <li><a href="javascript:void(0);" class="mobile-nav-trigger"><i class="fa fa-bars"></i></a></li>
                     {{ range .Site.Menus.main }}
                     <li class="nav-item">
                         <a class="nav-link" href="{{.URL}}">{{ .Name }}</a>

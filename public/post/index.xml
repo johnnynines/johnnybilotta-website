@@ -6,11 +6,7 @@
     <description>Recent content in Posts on Johnny Bilotta | Digital Product Designer</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>2021</copyright>
-    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://johnnybilotta.com/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://johnnybilotta.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo Project Retrospective</title>
       <link>https://johnnybilotta.com/post/hugo-project-update/</link>
@@ -46,8 +42,9 @@ What Have I Learned First, Hugo’s ease of use is a bit deceiving. On the surfa
       
       <guid>https://johnnybilotta.com/post/sites-found-july/</guid>
       <description>Been a minute since I published one of these. Below are some sites I found during my travels around the internet, that digital product designers and fellow technophiles may find helpful or interesting.
-Haikei App   https://haikei.app/
-Haikei App is the evolution of two web projects by Z Creative Labs (https://zcreativelabs.com/). It is a FREE web app that helps produce unique SVG design assets for use in your web projects.</description>
+Haikei App https://haikei.app/
+Haikei App is the evolution of two web projects by Z Creative Labs (https://zcreativelabs.com/). It is a FREE web app that helps produce unique SVG design assets for use in your web projects.
+Evil Martians - How to Favicon https://evilmartians.</description>
     </item>
     
     <item>

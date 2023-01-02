@@ -5,10 +5,6 @@
     <link>https://johnnybilotta.com/categories/</link>
     <description>Recent content in Categories on Johnny Bilotta | Digital Product Designer</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>2021</copyright>
-    
-	<atom:link href="https://johnnybilotta.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <copyright>2021</copyright><atom:link href="https://johnnybilotta.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

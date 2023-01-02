@@ -1,31 +1,43 @@
 {{ partial "header" .}}
 {{ partial "main-nav.html" .}}
+{{ partial "mobile-nav"}}
 {{ partial "floating-logo.html" .}}
-<div id="singleContent" class="container-fluid single-post">
-    <div id="galleryChild" class="row">
-        <div class="col-3">
-            <div id="gallery-meta" class="mt-5">
-                <h3>Gallery Info</h3>
-                <ul>
-                    <li>This is one piece of info</li>
-                    <li>Yet another piece of info</li>
-                    <li>One more to get</li>
-                </ul>
-            </div>
-
-        </div>
-        <div class="gallery-one col-9">
+<div id="singleContent" class="container single-post">
+    <div id="galleryHeader" class="row mt-4">
+        <div class="col-8 offset-lg-1">
             {{ partial "breadcrumb-alt.html" .}}
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Description }}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="gallery-one col-8 offset-lg-1">  
             {{ with .Resources.Match "images/*" }}
                 {{ range . }}
-                    <div class="img-list my-3 p-2">
+                    <div class="img-list-item my-3 p-2">
                         <img class="img-texture img-fluid" src="{{ . }}" alt="texture">
-                        <div class="img-desc p-1">
-                            <p>This is just the description</p>
+                        <div class="img-desc">
+                            <div class="img-links">
+                                <div class="row p-2">
+                                    <div class="col text-center">
+                                        <a href=""><i class="fal fa-download"></i> Download</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 {{ end }}
             {{ end }}
+        </div>
+        <div class="col-2">
+            <div id="gallery-meta" class="mt-5">
+                <h3>Gallery Info</h3>
+                <ul class="gallery-info">
+                    <li class="p-2">{{ partial "download-pack.html" .}}</li>
+                    <li class="p-2"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </div>

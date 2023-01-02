@@ -1,0 +1,5 @@
+{{ range $.Page.Resources.Match "download/*.zip" }}
+<a href="{{ .Permalink }}" target="_blank" rel="noopener noreferrer">
+    <i class="fal fa-download me-2"></i>Download
+</a>
+{{ end }}

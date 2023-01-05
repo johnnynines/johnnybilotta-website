@@ -23658,9 +23658,9 @@ code {
   #mobileLogo {
     display: block; }
     #mobileLogo #floatingLogo {
-      left: -10%; }
+      left: 0; }
       #mobileLogo #floatingLogo img {
-        width: 18rem; } }
+        width: 10rem; } }
 
 .hidden {
   display: none; }
@@ -23704,17 +23704,27 @@ code {
 
 #mobileMenu {
   background-color: rgba(6, 16, 22, 0.85); }
+  #mobileMenu ul.mobile-nav {
+    font-size: 2rem; }
+    #mobileMenu ul.mobile-nav .nav-link {
+      display: block;
+      color: #96acbf; }
 
 .mobile-overlay {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
+  bottom: 0;
   z-index: 1020; }
 
-.mobile-nav-trigger {
-  display: block; }
+.mobile-nav-trigger, .close-overlay-trigger {
+  display: block;
+  font-size: 1.5rem;
+  color: #96acbf; }
+  .mobile-nav-trigger:hover, .mobile-nav-trigger:active, .close-overlay-trigger:hover, .close-overlay-trigger:active {
+    color: #0d6efd; }
 
 @media (min-width: 768px) {
   .mobile-nav-trigger {

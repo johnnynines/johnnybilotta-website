@@ -23603,10 +23603,10 @@ code {
 #floatingLogo {
   position: fixed;
   top: 0;
-  left: -6em;
+  left: 0;
   z-index: 2000; }
   #floatingLogo img {
-    width: 25rem; }
+    width: 9rem; }
 
 .feature-img-container {
   height: 260px;
@@ -23658,9 +23658,12 @@ code {
   #mobileLogo {
     display: block; }
     #mobileLogo #floatingLogo {
-      left: -10%; }
+      left: 0; }
       #mobileLogo #floatingLogo img {
-        width: 18rem; } }
+        width: 10rem; } }
+
+.hidden {
+  display: none; }
 
 #mainContainer {
   background-attachment: fixed;
@@ -23694,6 +23697,38 @@ code {
 
 #mainNav {
   background-color: rgba(6, 16, 22, 0.85); }
+
+@media (max-width: 767.98px) {
+  #mainNav ul.navbar-nav .nav-item {
+    display: none; } }
+
+#mobileMenu {
+  background-color: rgba(6, 16, 22, 0.85); }
+  #mobileMenu ul.mobile-nav {
+    font-size: 2rem; }
+    #mobileMenu ul.mobile-nav .nav-link {
+      display: block;
+      color: #96acbf; }
+
+.mobile-overlay {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1020; }
+
+.mobile-nav-trigger, .close-overlay-trigger {
+  display: block;
+  font-size: 1.5rem;
+  color: #96acbf; }
+  .mobile-nav-trigger:hover, .mobile-nav-trigger:active, .close-overlay-trigger:hover, .close-overlay-trigger:active {
+    color: #0d6efd; }
+
+@media (min-width: 768px) {
+  .mobile-nav-trigger {
+    display: none; } }
 
 .border-top {
   border-top: 1px dotted #4e6273 !important; }
@@ -23769,6 +23804,9 @@ code {
 
 #singleContent .post-heading {
   background-color: rgba(0, 0, 0, 0.8); }
+
+#galleryList {
+  min-height: 80vh; }
 
 .card {
   background: rgba(16, 26, 35, 0.85); }

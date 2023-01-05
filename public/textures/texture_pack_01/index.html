@@ -47,6 +47,7 @@
         <div id="navbarNav" class="">
             <div class="col">
                 <ul class="navbar-nav">
+                    <li><a href="javascript:void(0);" class="mobile-nav-trigger"><i class="fa fa-bars"></i></a></li>
                     
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
@@ -65,14 +66,28 @@
         </div>
     </div>
 </nav>
+<div id="mobileMenu" class="mobile-overlay hidden">
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-1 p-2"><a href="javascript:void(0)" class="close-overlay-trigger "><i class="fa fa-times"></i></a></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav-overlay row">
+            <div class="col text-center mt-5">
+                <ul class="mobile-nav">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="floatingLogo">
-    <a href="https://johnnybilotta.com"><img src="/img/logo-chip@2x.png" alt="test" /></a>
+    <a href="https://johnnybilotta.com"><img src="/img/floating-logo.svg" alt="test" /></a>
 </div>
 <div id="singleContent" class="container single-post">
-    <div id="galleryChild" class="row">
-        
-        <div class="gallery-one col-8 offset-lg-1">
-            <h1>Texture Pack 01</h1>
+    <div id="galleryHeader" class="row mt-4">
+        <div class="col-md-8 col-sm-12 offset-lg-1">
             <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         
@@ -91,6 +106,12 @@
                 
     </ol>
 </nav>
+            <h1>Texture Pack 01</h1>
+            <p>Stone and rough textures collected while walking Drax on a overcast day.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="gallery-one col-md-8 col-sm-12 offset-lg-1">  
             
                 
                     <div class="img-list-item my-3 p-2">
@@ -99,7 +120,7 @@
                             <div class="img-links">
                                 <div class="row p-2">
                                     <div class="col text-center">
-                                        <a href=""><i class="fal fa-download"></i> Download</a>
+                                        <a href="https://johnnybilotta.com/textures/texture_pack_01/images/20220416_110656.jpg"><i class="fal fa-download"></i> Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -112,7 +133,7 @@
                             <div class="img-links">
                                 <div class="row p-2">
                                     <div class="col text-center">
-                                        <a href=""><i class="fal fa-download"></i> Download</a>
+                                        <a href="https://johnnybilotta.com/textures/texture_pack_01/images/20220416_110714.jpg"><i class="fal fa-download"></i> Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +146,7 @@
                             <div class="img-links">
                                 <div class="row p-2">
                                     <div class="col text-center">
-                                        <a href=""><i class="fal fa-download"></i> Download</a>
+                                        <a href="https://johnnybilotta.com/textures/texture_pack_01/images/20220416_110732.jpg"><i class="fal fa-download"></i> Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +159,7 @@
                             <div class="img-links">
                                 <div class="row p-2">
                                     <div class="col text-center">
-                                        <a href=""><i class="fal fa-download"></i> Download</a>
+                                        <a href="https://johnnybilotta.com/textures/texture_pack_01/images/20220605_142841.jpg"><i class="fal fa-download"></i> Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -151,7 +172,7 @@
                             <div class="img-links">
                                 <div class="row p-2">
                                     <div class="col text-center">
-                                        <a href=""><i class="fal fa-download"></i> Download</a>
+                                        <a href="https://johnnybilotta.com/textures/texture_pack_01/images/20220605_142845.jpg"><i class="fal fa-download"></i> Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -160,15 +181,86 @@
                 
             
         </div>
-        <div class="col-2">
+        <div class="col-md-2 col-sm-12">
             <div id="gallery-meta" class="mt-5">
                 <h3>Gallery Info</h3>
                 <ul class="gallery-info">
-                    <li class="p-2"><a href=""><i class="fal fa-download me-2"></i>Download All</a></li>
+                    <li class="p-2">
+<a href="https://johnnybilotta.com/textures/texture_pack_01/download/texture_pack_01.zip" target="_blank" rel="noopener noreferrer">
+    <i class="fal fa-download me-2"></i>Download
+</a>
+</li>
                     <li class="p-2"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </li>
                 </ul>
             </div>
-
         </div>
     </div>
-</div>zerdf 
+</div>
+<div id="modalContact" class="modal fade" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalContact" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content px-3">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Contact Me</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></i>&nbsp;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col">
+                    <p>Thank you for visiting my site. I hope you found something useful or interesting. Please use this form to send me any feedback, questions or just to connect. Have a wonderful day!
+                    </p>
+                  </div>
+              </div>
+          </div>
+       
+        <div id="contactForm">
+    <form action="https://getform.io/f/5fb4f6df-87dc-4dc3-8628-566762363995" method="POST">
+        <div class="form-floating mb-3">
+            <input type="text" name="name" id="nameField" class="form-control">
+            <label for="nameField">Your name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" name="email" id="emailField" class="form-control">
+            <label for="emailField">Your email</label>
+        </div>
+        <div class="form-floating">
+            <textarea name="message" id="messageField" class="form-control"></textarea>
+            <label for="messageField">Your message</label>
+        </div>
+        
+        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end form-footer mt-3">
+            <button type="submit" class="btn btn-outline-primary">Send Message</button>
+        </div>
+       
+    </form>
+</div>
+      </div>
+       
+    </div>
+  </div>
+</div>
+
+<div id="mobileFooter" class="container-fluid">
+  <div class="row section-bg-drk p-5">
+    <p class="copyright">&copy; 2023 Johnny Bilotta. All rights reserved. </p>
+</div>
+
+</div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script src="https://johnnybilotta.comjs/bootstrap.min.js"></script>
+
+<script src="/js/main.js"></script>
+
+</body>
+</html>

@@ -44,7 +44,7 @@
 
 	<div id="mobileLogo">
 		<div id="floatingLogo">
-    <a href="https://johnnybilotta.com"><img src="/img/logo-chip@2x.png" alt="test" /></a>
+    <a href="https://johnnybilotta.com"><img src="/img/floating-logo.svg" alt="test" /></a>
 </div>
 	</div>
 	<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -52,6 +52,7 @@
         <div id="navbarNav" class="">
             <div class="col">
                 <ul class="navbar-nav">
+                    <li><a href="javascript:void(0);" class="mobile-nav-trigger"><i class="fa fa-bars"></i></a></li>
                     
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home</a>
@@ -70,6 +71,34 @@
         </div>
     </div>
 </nav>
+	<div id="mobileMenu" class="mobile-overlay hidden">
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-1 p-2"><a href="javascript:void(0)" class="close-overlay-trigger "><i class="fa fa-times"></i></a></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav-overlay row">
+            <div class="col text-center mt-5">
+                <ul class="mobile-nav">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="/">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="/profile/about/">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link p-3" href="/textures/">Textures</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 	<div id="mainContainer" class="container-fluid">
 		<div class="row">
 			<div id="leftSidebar" class="col-sm-3 col-md-3 col-lg-3 sidebar ps-5">
@@ -200,7 +229,7 @@ The best products and services in history are supremely successful because they 
 				</div>
 				
 
-				<div class="text-center">
+				<div class="text-center mb-4">
 					
     <ul class="pagination pagination-default">
       <li class="page-item disabled">
@@ -277,7 +306,7 @@ The best products and services in history are supremely successful because they 
 
 <div id="mobileFooter" class="container-fluid">
   <div class="row section-bg-drk p-5">
-    <p class="copyright">&copy; 2022 Johnny Bilotta. All rights reserved. </p>
+    <p class="copyright">&copy; 2023 Johnny Bilotta. All rights reserved. </p>
 </div>
 
 </div>
@@ -289,7 +318,7 @@ The best products and services in history are supremely successful because they 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-<script src="https://johnnybilotta.com/js/bootstrap.min.js"></script>
+<script src="https://johnnybilotta.comjs/bootstrap.min.js"></script>
 
 <script src="/js/main.js"></script>
 

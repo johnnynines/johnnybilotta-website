@@ -23703,7 +23703,7 @@ code {
     display: none; } }
 
 #mobileMenu {
-  background-color: rgba(6, 16, 22, 0.85); }
+  background-color: rgba(6, 16, 22, 0.9); }
   #mobileMenu ul.mobile-nav {
     font-size: 2rem; }
     #mobileMenu ul.mobile-nav .nav-link {

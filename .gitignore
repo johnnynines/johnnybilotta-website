@@ -4,3 +4,4 @@ public/*
 .DS_Store
 .hugo_build.lock
 content/textures/*
+resources/_gen/*

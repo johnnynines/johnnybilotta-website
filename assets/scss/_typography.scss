@@ -219,6 +219,29 @@ code {
     background: $blu-new;
 }
 
+// Pagination
+
+.page-item.disabled .page-link {
+    background-color: $blu-new;
+    border-color: $drk-bdr;
+}
+
+.page-item.active .page-link {
+    background-color: $blu-tint;
+    border-color: $blu-tint;
+}
+
+.page-link {
+    background-color: $blu-new;
+    border-color: $drk-bdr;
+
+    &:hover {
+        background-color: $drk-blu;
+        border-color: $tarmac;
+        color: $wht;
+    }
+}
+
 #modalContact {
     .modal-header {
         // .btn-close {

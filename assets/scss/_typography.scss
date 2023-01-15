@@ -28,13 +28,28 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+h2, h3, h4, h5, h6 {
+    &::after {
+        content: "";
+        display: block;
+        width: 15%;
+        padding-top: .5em;
+        border-bottom: 1px solid $red;
+
+    }
+}
+
 h1 {
     color: $red;
 }
 
 h2 {
+    color: $wht;
+    margin: 2rem 0 1rem 0;
     font-size: $font-size-lg;
+    font-weight: $bold;
 }
+
 h3 {
     font-size: $font-size-md;
 }
@@ -72,22 +87,6 @@ blockquote {
         color: $wht;
         font-size: $font-size-xl;
         text-transform: uppercase;
-    }
-
-    h2 {
-        color: $wht;
-        margin: 2rem 0 1rem 0;
-        font-size: $font-size-lg;
-        font-weight: $bold;
-
-        &::after {
-            content: "";
-            display: block;
-            width: 15%;
-            padding-top: .5em;
-            border-bottom: 1px solid $red;
-
-        }
     }
 
     .post-body {

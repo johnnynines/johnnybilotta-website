@@ -3,6 +3,7 @@ title = "Johnny Bilotta | Digital Product Designer"
 author = "Johnny Bilotta"
 copyright = "2021"
 theme = "strange-signal"
+googleAnalytics = 'G-W1NNMCGNMG'
 
 [params]
 	colorScheme = "night"

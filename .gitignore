@@ -5,3 +5,5 @@ public/*
 .hugo_build.lock
 content/textures/*
 resources/_gen/*
+node_modules
+yarn.lock

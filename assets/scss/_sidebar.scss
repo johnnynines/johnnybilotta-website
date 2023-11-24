@@ -41,6 +41,10 @@
     .social-icons {
         a {
             color: $lgt-grey;
+            transition: color .5s ease-in-out;
+            &:hover {
+                color: $wht
+            }
         }
     }
 }

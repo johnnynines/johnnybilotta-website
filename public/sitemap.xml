@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://johnnybilotta.com/</loc>
-    <lastmod>2022-10-31T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnnybilotta.com/textures/texture_pack_02/</loc>
+    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnnybilotta.com/textures/</loc>
+    <lastmod>2023-01-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnnybilotta.com/profile/mission-statement/</loc>
     <lastmod>2022-10-31T00:00:00+00:00</lastmod>
@@ -45,7 +51,5 @@
     <loc>https://johnnybilotta.com/tags/</loc>
   </url><url>
     <loc>https://johnnybilotta.com/textures/texture_pack_01/</loc>
-  </url><url>
-    <loc>https://johnnybilotta.com/textures/</loc>
   </url>
 </urlset>

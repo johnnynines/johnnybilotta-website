@@ -3,51 +3,53 @@
 {{ partial "floating-logo.html" .}}
 {{ partial "mobile-nav" .}}
 
-<div id="profile" class="content-profile container">
-    <div class="row my-5">
-        <div class="col-lg-4 col-sm-12">
-            {{ partial "profile-pic.html" .}}
-            {{ partial "social.html" . }}
-        </div>
-        <div class="col-lg-8 col-sm-12">
-            {{ with .Site.GetPage "/profile/about.md"}}
-                {{ .Content }}
-            {{ end }}
-        </div>
-    </div>
-</div>
-<div class="section-bg-drk py-5">
-    <div id="missionStatement" class="container">
-        <div class="row">
-            <div class="col align-self-center text-center mb-3">
-                <h4>Mission Statement</h4>
+<div id="about">
+    <div id="profile" class="content-profile container">
+        <div class="row my-5">
+            <div class="col-lg-4 col-sm-12">
+                {{ partial "profile-pic.html" .}}
+                {{ partial "social.html" . }}
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-9">
-                <blockquote>
-                {{ with .Site.GetPage "/profile/mission-statement.md"}}
+            <div class="col-lg-8 col-sm-12">
+                {{ with .Site.GetPage "/profile/about.md"}}
                     {{ .Content }}
                 {{ end }}
-                </blockquote>
             </div>
         </div>
     </div>
-</div>
-<div class="py-5">
-    <div id="aboutContact" class="container">
-        <div class="row justify-content-center">
-            <div class="col align-self-center text-center mb-3">
-                <h4>Contact Me</h4>
+    <div class="section-bg-drk py-5">
+        <div id="missionStatement" class="container">
+            <div class="row">
+                <div class="col align-self-center text-center mb-3">
+                    <h4>Mission Statement</h4>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-9">
+                    <blockquote>
+                    {{ with .Site.GetPage "/profile/mission-statement.md"}}
+                        {{ .Content }}
+                    {{ end }}
+                    </blockquote>
+                </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-9">
-                {{ partial "contact-form" .}}
+    </div>
+    <div class="py-5">
+        <div id="aboutContact" class="container">
+            <div class="row justify-content-center">
+                <div class="col align-self-center text-center mb-3">
+                    <h4>Contact Me</h4>
+                </div>
             </div>
-            <!-- {{ range $.Site.Data.profile.skills }}
-                {{ partial "skill-section.html" . }}
-            {{ end }} -->
+            <div class="row justify-content-center">
+                <div class="col-9">
+                    {{ partial "contact-form" .}}
+                </div>
+                <!-- {{ range $.Site.Data.profile.skills }}
+                    {{ partial "skill-section.html" . }}
+                {{ end }} -->
+            </div>
         </div>
     </div>
 </div>

@@ -1,7 +1,7 @@
 ---
 title: "Page or Post Bundle Example"
 date: "2021-08-09"
-featured_image: "images/featured-image.jpg"
+featured_image: "img/featured-image.jpg"
 draft: "true"
 ---
 

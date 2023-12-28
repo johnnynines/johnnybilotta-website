@@ -1,5 +1,5 @@
 .gulpfile
-content/post/example-bundle
+content/post/*
 public/*
 .DS_Store
 .hugo_build.lock

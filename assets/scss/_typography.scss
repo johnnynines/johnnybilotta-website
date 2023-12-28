@@ -21,7 +21,7 @@ a {
         color: $blu;
     }
 }
-
+ 
 h1, h2, h3, h4, h5, h6 {
     font-family: $prometo;
     font-weight: $normal;
@@ -211,6 +211,14 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.post-body {
+    ul {
+        list-style: disc;
+        margin-left: 1.5rem;
+        padding: 0;
+    }
 }
 
 .file-list {

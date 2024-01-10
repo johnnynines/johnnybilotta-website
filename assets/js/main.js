@@ -12,3 +12,6 @@ closeNavButton.addEventListener('click', function() {
     mobileNav.classList.add('hidden');
 });
 
+// Initialize the Highlight.js plugin
+hljs.initHighlighting();
+

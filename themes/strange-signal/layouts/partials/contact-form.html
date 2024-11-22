@@ -1,5 +1,5 @@
 <div id="contactForm">
-    <form action="https://getform.io/f/5fb4f6df-87dc-4dc3-8628-566762363995" method="POST">
+    <form id="emailForm">
         <div class="form-floating mb-3">
             <input type="text" name="name" id="nameField" class="form-control">
             <label for="nameField">Your name</label>
@@ -20,4 +20,6 @@
         </div>
        
     </form>
+    {{ $formScript := resources.Get "js/jb_form.js" }}
+    <script src="{{ $formScript.RelPermalink }}"></script>
 </div>

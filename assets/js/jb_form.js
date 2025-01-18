@@ -1,4 +1,8 @@
+// Description: This file contains the JavaScript code for the contact form on the website.
+
 const form = document.getElementById('emailForm');
+const successMessage = document.getElementById('successMessage');
+const errorMessage = document.getElementById('errorMessage');
 
 form.addEventListener('submit',  async(event) => {
     event.preventDefault();
@@ -8,20 +12,25 @@ form.addEventListener('submit',  async(event) => {
     const emailField = document.getElementById('emailField').value;
     const messageField = document.getElementById('messageField').value;
 
-    // // Email validation regex
-    // const emailRegex = /^\S+@\S+\.\S+$/;
-    // if (!nameField || !emailField || !messageField || !emailRegex.test(emailField)) {
-    //     alert('Please fill out all fields and enter a valid email address.');
-    //     return;
-    // }
+    // Simple validation
+    if (!nameField || !emailField || !messageField) {
+        alert('All fields are required.');
+        return;
+    }
+    // Email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(emailField)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
 
     const formData = {
         name: nameField,
         email: emailField,
         message: messageField
     }
-        submitForm(formData);
-        console.log('Form data:', formData);
+    submitForm(formData);
+    console.log('Form data:', formData);
 });
     
 async function submitForm(formData) {
@@ -39,6 +48,10 @@ async function submitForm(formData) {
         if (response.ok) {
             console.log('Response:', response);
             alert('Email sent successfully!');
+            form.reset();
+            successMessage.classList.remove('hidden');
+            
+
         } else {
             console.log('Response:', response);
             alert('Failed to send email.');

@@ -28,13 +28,18 @@
 		# Optional: comment out strange-case.css above, minify it with YUICompressor and paste inline styles here to lose a request...
 	</style>-->
 
-	{{ $options := (dict "enableSourceMap" true )}}
-	{{ $scss := resources.Get "scss/main.scss" }}
-	{{ if $scss }}
-		{{ $styles := $scss | resources.ToCSS $options }}
-		<link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+	{{ with resources.Get "scss/main.scss" }}
+		{{ $opts := dict "transpiler" "libsass" "targetPath" "css/main.css" }}
+		{{ with . | toCSS $opts}}
+			{{ if hugo.IsDevelopment }}
+				<link rel="stylesheet" href="{{ .Permalink }}">
+			{{ else }}
+				{{ with . | minify | fingerprint }}
+					<link rel="stylesheet" href="{{ .RelPermalink }}">
+				{{ end }}
+			{{ end }}
+		{{ end }}
 	{{ end }}
-	
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

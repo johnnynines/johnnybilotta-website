@@ -34,8 +34,8 @@
 			{{ if hugo.IsDevelopment }}
 				<link rel="stylesheet" href="{{ .Permalink }}">
 			{{ else }}
-				{{ with . | minify | fingerprint }}
-					<link rel="stylesheet" href="{{ .RelPermalink }}">
+				{{ with . | minify }}
+					<link rel="stylesheet" href="{{ .Permalink }}">
 				{{ end }}
 			{{ end }}
 		{{ end }}

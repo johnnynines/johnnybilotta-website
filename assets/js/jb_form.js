@@ -47,7 +47,6 @@ async function submitForm(formData) {
     .then(response => {
         if (response.ok) {
             console.log('Response:', response);
-            alert('Email sent successfully!');
             form.reset();
             successMessage.classList.remove('hidden');
             

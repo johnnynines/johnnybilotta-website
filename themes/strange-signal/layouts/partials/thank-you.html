@@ -1,0 +1,25 @@
+<div id="contactForm">
+    <form id="emailForm">
+        <div class="form-floating mb-3">
+            <input type="text" name="name" id="nameField" class="form-control">
+            <label for="nameField">Your name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="email" name="email" id="emailField" class="form-control">
+            <label for="emailField">Your email</label>
+        </div>
+        <div class="form-floating">
+            <textarea name="message" id="messageField" class="form-control"></textarea>
+            <label for="messageField">Your message</label>
+        </div>
+        
+        <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end form-footer mt-3">
+            <button type="submit" class="btn btn-outline-primary">Send Message</button>
+        </div>
+       
+    </form>
+    {{ $formScript := resources.Get "js/jb_form.js" }}
+    <script src="{{ $formScript.RelPermalink }}"></script>
+</div>

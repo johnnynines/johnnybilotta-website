@@ -1,0 +1,9 @@
+<div class="feature-img-container">
+    {{ if .Params.featured_image }}
+    {{ range .Resources.Match "img/featured-image.jpg"}}
+        <img class="featured-image" src="{{ .Permalink }}" />
+    {{ end }}
+    {{ else }}
+        <img class="featured-image" src="{{ .Site.Params.featuredImageDefault | absURL }}" />
+    {{ end }}
+</div>

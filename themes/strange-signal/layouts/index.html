@@ -1,34 +1,31 @@
 {{ partial "header.html" . }}
-	<div id="mobileLogo">
+	<div id="mobileLogo" class="invisible">
 		{{ partial "floating-logo.html" . }}
 	</div>
 	{{ partial "main-nav.html" .}}
 	{{ partial "mobile-nav" .}}
-	<div id="mainContainer" class="container-fluid bg-gray-800">
-		<div class="row">
-			<div id="leftSidebar" class="col-sm-3 col-md-3 col-lg-3 sidebar ps-5">
-
-			{{ partial "sidebar-content.html" . }}
-
+	<div id="mainContainer" class="container-fluid mx-auto py-8 bg-gray-900">
+		<div class="flex justify-center">
+			<div id="leftSidebar" class="flex-none w-100 mx-5 px-4">
+				{{ partial "sidebar-content.html" . }}
 			</div>
-			<div class="col-md-7 offset-md-1 content">
+			<div class="flex-auto mx-12 content">
 				{{ range (where .Site.RegularPages "Section" "post") }}
-				<div class="post">
-					<div class="feature-img-container">
+				<div class="post bg-gray-950/80 rounded-md p-4 my-8">
+					<div class="feature-img-container mb-6">
 						{{ if .Params.featured_image }}
 						{{ range .Resources.Match "img/featured-image.jpg"}}
-							<img class="featured-image" src="{{ .Permalink }}" />
+							<img class="featured-image h-90 w-full object-none" src="{{ .Permalink }}" />
 						{{ end }}
 						{{ else }}
-							<img class="featured-image" src="{{ .Site.Params.featuredImageDefault | absURL }}" />
+							<img class="featured-image h-90 w-full object-none" src="{{ .Site.Params.featuredImageDefault | absURL }}" />
 						{{ end }}
 					</div>
-					<div class="post-heading mb-3">
-						
-						<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-						<span class="post-date">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
+					<div class="post-heading mb-4">
+						<h1 class="text-red-600 text-2xl"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+						<span class="post-date text-gray-600">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
 					</div>
-					<div class="post-summary">
+					<div class="post-summary text-gray-400">
 						{{ .Summary }}
 					</div>
 				</div>

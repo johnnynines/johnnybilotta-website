@@ -28,7 +28,7 @@
 		# Optional: comment out strange-case.css above, minify it with YUICompressor and paste inline styles here to lose a request...
 	</style>-->
 
-	{{ with resources.Get "scss/main.scss" }}
+	<!-- {{ with resources.Get "scss/main.scss" }}
 		{{ $opts := dict "transpiler" "libsass" "targetPath" "css/main.css" }}
 		{{ with . | toCSS $opts}}
 			{{ if hugo.IsDevelopment }}
@@ -39,10 +39,10 @@
 				{{ end }}
 			{{ end }}
 		{{ end }}
-	{{ end }}
+	{{ end }} -->
 
 	{{ partialCached "css.html" . }}
-	
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	{{ "<!--[if lt IE 9]>" | safeHTML }}
@@ -53,4 +53,4 @@
 	<!-- RSS -->
 	<link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 </head>
-<body class="{{ .Site.Params.colorScheme }}">
+<body class="bg-gray-900 text-gray-300">

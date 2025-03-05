@@ -3,34 +3,27 @@
 {{ partial "mobile-nav" .}}
 {{ partial "floating-logo.html" .}}
 	<div id="singleContent" class="container-fluid single-post">
-
 		{{ if .Params.featured_image }}
 		{{ with .Params.featured_image }}
-		<div id="letterboxHeader" class="row align-items-end" style="background-image: url({{ . }});">
+		<div id="letterboxHeader" class="h-90 content-end bg-cover" style="background-image: url({{ . }});">
 		{{ end }}
 
 		{{ else }}
-		<div id="letterboxHeader" class="row align-items-end" style="background-image: url( {{ .Site.Params.featuredImageDefault | relURL }} )">	
+		<div id="letterboxHeader" class="h-90 content-end bg-cover" style="background-image: url( {{ .Site.Params.featuredImageDefault | relURL }} )">	
 		{{ end }}
 
-			<div class="col-sm-7 offset-sm-3 py-3 post-heading">
-				<h1 class="my-3">{{ .Title }}</h1>
-				<span class="post-date">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
+			<div class="container flex items-center mx-auto max-w-4xl bg-gray-950/80 p-4">
+				<div class="flex-auto *:post-heading">
+					<h1 class="my-3 text-3xl text-red-600">{{ .Title }}</h1>
+					<span class="post-date text-gray-400">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div id="leftSidebar" class="col-sm-3 sidebar">
-
-				{{ partial "social-share.html" . }}
-	
-			</div>
-			
-			<div class="col-sm-7 content">
-
-				<div class="post-body mb-5 pb-5">
+		<div class="container flex max-w-4xl items-center mx-auto">
+			<div class="flex-auto  content">
+				<div class="post-body mb-5 py-5">
 					{{ .Content }}
 				</div>
-
 			</div>
 			</div>
 		</div>

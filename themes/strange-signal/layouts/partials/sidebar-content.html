@@ -4,8 +4,8 @@
 			<a href="{{ .Site.BaseURL }}"><img src="{{ "img/logo-monogram-scan@2x.png" | relURL }}" alt="test" /></a>
 		</div>
 
-		<div class="sidebar-description">
-			<p>{{ .Site.Params.description }}</p>
+		<div class="sidebar-description border-y border-gray-600 my-4 py-4">
+			<p class="text-gray-600">{{ .Site.Params.description }}</p>
 		</div>
 
 		{{ if .Site.Params.sidebarFreeText }}

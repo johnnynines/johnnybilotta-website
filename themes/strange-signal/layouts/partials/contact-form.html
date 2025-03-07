@@ -1,22 +1,24 @@
 <div id="contactForm">
     <form id="emailForm">
-        <div class="form-floating mb-3">
-            <input type="text" name="name" id="nameField" class="form-control">
-            <label for="nameField">Your name</label>
+        <div class="mb-3">
+            <label for="nameField" class="mb-2 inline-block text-sm text-gray-500 sm:text-base">Your name</label>
+            <input type="text" name="name" id="nameField" class="w-full rounded border border-gray-600 px-3 py-2 text-gray-300 outline-none ring-sky-500 transition duration-100 focus:ring" placeholder="Name">
         </div>
-        <div class="form-floating mb-3">
-            <input type="email" name="email" id="emailField" class="form-control">
-            <label for="emailField">Your email</label>
+        <div class="mb-3">
+            <label for="emailField" class="mb-2 inline-block text-sm text-gray-500 sm:text-base">Your email</label>
+            <input type="email" name="email" id="emailField" class="w-full rounded border border-gray-600 px-3 py-2 text-gray-300 outline-none ring-sky-500 transition duration-100 focus:ring" placeholder="Email">
         </div>
-        <div class="form-floating">
-            <textarea name="message" id="messageField" class="form-control"></textarea>
+        <div class="mb-3">
             <label for="messageField">Your message</label>
+            <textarea name="message" id="messageField" class="h-64 w-full rounded border border-gray-600 px-3 py-2 text-gray-300 outline-none ring-sky-500 transition duration-100 focus:ring"></textarea>
         </div>
         
         <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
 
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end form-footer mt-3">
-            <button type="submit" class="btn btn-outline-primary">Send Message</button>
+        <div class="w-full justify-items-end form-footer mt-3">
+            <button type="submit" class="inline-block rounded-md bg-sky-500 px-8 py-3 text-center text-sky-950 font-semibold hover:bg-sky-400 transition duration-100">
+                Send Message
+            </button>
         </div>
     </form>
 </div>

@@ -9,11 +9,11 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-{{ $bootstrapjs := resources.Get "js/bootstrap.min.js" }}
+<script src="https://kit.fontawesome.com/7529b71c4e.js" crossorigin="anonymous"></script>
 {{ $highlightjs := resources.Get "js/highlight.min.js" }}
 {{ $higlightline := resources.Get "js/highlight.ln.js" }}
 {{ $scripts := resources.Get "js/main.js" }}
-<script src="{{ $bootstrapjs.RelPermalink }}"></script>
+
 <script src="{{ $highlightjs.RelPermalink }}"></script>
 <script src="{{ $higlightline.RelPermalink }}"></script>
 <script src="{{ $scripts.RelPermalink }}"></script>

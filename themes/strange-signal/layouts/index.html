@@ -4,37 +4,16 @@
 	</div>
 	{{ partial "main-nav.html" .}}
 	{{ partial "mobile-nav" .}}
-	<div id="mainContainer" class="container-fluid mx-auto py-8 bg-gray-900">
+	<div id="mainContainer" class="container mx-auto py-8 bg-gray-900">
 		<div class="flex justify-center">
 			<div id="leftSidebar" class="flex-none w-100 mx-5 px-4">
 				{{ partial "sidebar-content.html" . }}
 			</div>
-			<div class="flex-auto mx-12 content">
-				{{ range (where .Site.RegularPages "Section" "post") }}
-				<div class="post bg-gray-950/80 rounded-md p-4 my-8">
-					<div class="feature-img-container mb-6">
-						{{ if .Params.featured_image }}
-						{{ range .Resources.Match "img/featured-image.jpg"}}
-							<img class="featured-image h-90 w-full object-none" src="{{ .Permalink }}" />
-						{{ end }}
-						{{ else }}
-							<img class="featured-image h-90 w-full object-none" src="{{ .Site.Params.featuredImageDefault | absURL }}" />
-						{{ end }}
-					</div>
-					<div class="post-heading mb-4">
-						<h1 class="text-red-600 text-2xl"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-						<span class="post-date text-gray-600">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
-					</div>
-					<div class="post-summary text-gray-400">
-						{{ .Summary }}
-					</div>
-				</div>
-				{{ end }}
-
+			<div class="w-100 flex-auto mx-12 content">
+				{{ partial "post-summary.html" . }}
 				<div class="text-center mb-4">
 					{{ template "_internal/pagination.html" . }}
 				</div>
-
 			</div>
 		</div>
 	</div>

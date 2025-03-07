@@ -1,0 +1,23 @@
+{{ range (where .Site.RegularPages "Section" "post") }}
+    <div class="post bg-gray-950/80 rounded-md p-4 my-8">
+        <div class="feature-img-container mb-6">
+            {{ if .Params.featured_image }}
+            {{ range .Resources.Match "img/featured-image.jpg"}}
+                <img class="featured-image h-90 w-full object-none" src="{{ .Permalink }}" />
+            {{ end }}
+            {{ else }}
+                <img class="featured-image h-90 w-full object-none" src="{{ .Site.Params.featuredImageDefault | absURL }}" />
+            {{ end }}
+        </div>
+        <div class="post-heading mb-4">
+            <h1 class="text-red-500 text-2xl"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            <span class="post-date text-gray-400">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
+        </div>
+        <div class="post-summary text-gray-400">
+            {{ .Summary }}
+        </div>
+        <div class="post-footer w-full text-right justify-items-end">
+            <a href="{{ .Permalink }}" class="text-right">Read More<i class="fa-thin fa-chevron-right"></i></a>
+        </div>
+    </div>
+{{ end }}

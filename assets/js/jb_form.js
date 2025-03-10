@@ -1,8 +1,8 @@
 // Description: This file contains the JavaScript code for the contact form on the website.
 
 const form = document.getElementById('emailForm');
-const successMessage = document.getElementById('successMessage');
-const errorMessage = document.getElementById('errorMessage');
+const successMessage = document.getElementById('messageSuccess');
+const errorMessage = document.getElementById('MessageError');
 
 form.addEventListener('submit',  async(event) => {
     event.preventDefault();

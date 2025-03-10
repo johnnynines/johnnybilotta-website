@@ -1,13 +1,16 @@
-<div id="modalContact" class="bg-gray-950/80 rounded-md border-gray-500 modal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalContact" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content px-3">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Contact Me</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"></i>&nbsp;</span>
+<div 
+  id="modalContact" 
+  class="absolute top-0 left-0 w-full inset-0 opacity-0 h-full flex justify-center items-center pointer-events-none transition-opacity duration-300 ease-in-out z-[9999] bg-gray-950/80 modal"
+>
+  <div class="bg-gray-950 rounded-md border border-gray-600 w-200 scale-95 transition-transform duration-300 ease-in-out modal-dialog">
+    <div class="border-b border-gray-700 p-4 items-start">
+      <div class="flex border-b border-gray-700 p-4">
+        <h5 class="modal-title flex-auto text-3xl">Contact Me</h5>
+        <button id="modalClose" type="button" class="text-gray-400 flex-none text-2xl" data-bs-dismiss="modal" aria-label="Close">
+          <i class="far fa-times"></i>&nbsp;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="p-4 modal-body">
           <div class="container">
               <div class="flex justify-center">
                   <div class="flex-auto">
@@ -15,8 +18,8 @@
                     </p>
                   </div>
               </div>
-              <div id="successMessage" class="alert alert-success hidden">Your message was sent successfully!</div>
-              <div id="errorMessage" class="alert alert-danger hidden">Error sending message. Please try again.</div>
+              <div id="messageSuccess" class="bg-green-300 border-green-700 text-green-950 rounded-md px-4 py-2 my-2 w-full hidden"><i class="fa-light fa-check mr-2"></i>Your message was sent successfully!</div>
+              <div id="messageError" class="bg-red-300 border-red-600 text-red-950 rounded-md px-4 py-2 my-2 w-full hidden"><i class="fa-light fa-triangle-exclamation mr-2"></i>Error sending message. Please try again.</div>
           </div>
         {{ partial "contact-form.html" .}}
       </div>

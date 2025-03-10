@@ -9,7 +9,7 @@
             <input type="email" name="email" id="emailField" class="w-full rounded border border-gray-600 px-3 py-2 text-gray-300 outline-none ring-sky-500 transition duration-100 focus:ring" placeholder="Email">
         </div>
         <div class="mb-3">
-            <label for="messageField">Your message</label>
+            <label for="messageField" class="mb-2 inline-block text-sm text-gray-500 sm:text-base">Your message</label>
             <textarea name="message" id="messageField" class="h-64 w-full rounded border border-gray-600 px-3 py-2 text-gray-300 outline-none ring-sky-500 transition duration-100 focus:ring"></textarea>
         </div>
         
@@ -22,3 +22,6 @@
         </div>
     </form>
 </div>
+
+{{ $formScript := resources.Get "js/jb_form.js" }}
+<script src="{{ $formScript.RelPermalink }}"></script>

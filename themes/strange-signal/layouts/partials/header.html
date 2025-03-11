@@ -8,10 +8,6 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>{{ .Title }} - {{ .Site.Params.description }}</title>
 
-	<!-- Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-	<link rel="stylesheet" href="https://use.typekit.net/kik8ktc.css">
-
 	<!-- JS for use -->
 	
 
@@ -53,4 +49,4 @@
 	<!-- RSS -->
 	<link href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
 </head>
-<body class="bg-gray-900 text-gray-300">
+<body class="bg-slate-900 text-gray-300 font-proxima font-extralight">

@@ -5,24 +5,12 @@
 	{{ partial "main-nav.html" .}}
 	{{ partial "mobile-nav" .}}
 
-	<div class="container-fluid">
-		<div class="row">
-			<h1>{{ .Title }}</h1>
+	<div class="container w-2/3 mx-auto py-4 mt-[8rem] vh-100">
+		<div class="w-full">
+			<h1 class="border-b border-slate-600 border-dotted pb-1">{{ .Title }}</h1>
+			<p>{{ .Content }}</p>
 		</div>
-		{{ range .Paginator.Pages }}
-		<div class="row">
-			<div class="col">
-				{{ partial "featured_image.html" . }}
-			</div>
-			<div class="post col">
-				<div class="post-heading">
-					<h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-					<p><span>Type:</span>{{ if .Params.resource_type }} {{ .Params.resource_type }}{{ end }}</span></p>
-					{{ .Content }}
-				</div>
-			</div>
-		</div>
-		{{ end }}
+		{{ partial "resource-summary.html" . }}
 		<div class="text-center">
 			{{ template "_internal/pagination.html" . }}
 		</div>

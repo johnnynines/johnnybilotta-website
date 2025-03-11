@@ -4,12 +4,12 @@
 	</div>
 	{{ partial "main-nav.html" .}}
 	{{ partial "mobile-nav" .}}
-	<div id="mainContainer" class="container mx-auto py-8 bg-gray-900">
-		<div class="flex justify-center">
+	<div id="mainContainer" class="py-8 bg-gray-900 bg-[url(/img/landing-background.png)] bg-cover bg-center bg-fixed">
+		<div class="flex flex-wrap justify-center">
 			<div id="leftSidebar" class="flex-none w-100 mx-5 px-4">
 				{{ partial "sidebar-content.html" . }}
 			</div>
-			<div class="w-100 flex-auto mx-12 content">
+			<div class="w-100 flex-auto max-w-4xl mx-12 content">
 				{{ partial "post-summary.html" . }}
 				<div class="text-center mb-4">
 					{{ template "_internal/pagination.html" . }}

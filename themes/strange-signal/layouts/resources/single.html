@@ -2,23 +2,47 @@
 {{ partial "main-nav.html" .}}
 {{ partial "mobile-nav" .}}
 {{ partial "floating-logo.html" .}}
-<div id="singleContent" class="container single-post">
-    <div id="galleryHeader" class="row mt-4">
-        <div class="col-md-8 col-sm-12 offset-lg-1">
-            {{ partial "breadcrumb-alt.html" .}}
-            <h1>{{ .Title }}</h1>
+<div id="resourceContent" class="container mx-auto mt-[8rem] single-post h-screen">
+    {{ partial "breadcrumb-alt.html" .}}
+    <div id="resourceHeader" class="flex w-full mt-4 border-b border-slate-600 border-dotted">
+        <div class="flex-auto w-160 mx-5 px-4">
+            <h1 class="mb-1">{{ .Title }}</h1>
             <p>{{ .Description }}</p>
         </div>
     </div>
-    <div class="row">
-        <div class="gallery-one col-md-8 col-sm-12 offset-lg-1">  
+    <div class="flex flex-wrap w-full mt-4 p-4">
+        <div class="flex-auto w-100 border border-slate-600 border-dotted">
+            {{ partial "featured_image.html" . }}
+        </div>
+        <div class="flex-1 max-w-2xl p-4 ml-6">
+            <div class="resource-information">
+                {{ partial "download-pack.html" .}}
+                <div class="mt-3">
+                    <ul class="resource-info">
+                        <li class="mb-1"><strong>Resource Type:</strong> {{ .Params.resource_type }}</li>
+                        <li class="mb-1"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a class="text-sky-500" rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto border-t border-slate-600 border-dotted">
+        <div class="flex w-full mt-4 px-4">
+            <div class="flex-auto">
+                <div class="resource-information">
+                    <h3 class="mb-1">Description</h3>
+                    <p class="text-slate-400">{{ .Content }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-one flex flex-wrap w-full">  
             {{ with .Resources.Match "images/*" }}
                 {{ range . }}
-                    <div class="img-list-item my-3 p-2">
-                        <img class="img-texture img-fluid" src="{{ . }}" alt="texture">
+                    <div class="relative img-list-item my-3 p-2">
+                        <img class="w-100 img-texture img-fluid" src="{{ . }}" alt="texture">
                         <div class="img-desc">
-                            <div class="img-links">
-                                <div class="row p-2">
+                            <div class="bottom-0 img-links">
+                                <div class="p-2">
                                     <div class="col text-center">
                                         <a href="{{ .Permalink }}"><i class="fal fa-download"></i> Download</a>
                                     </div>
@@ -28,15 +52,6 @@
                     </div>
                 {{ end }}
             {{ end }}
-        </div>
-        <div class="col-md-2 col-sm-12">
-            <div id="gallery-meta" class="mt-5">
-                <h3>Gallery Info</h3>
-                <ul class="gallery-info">
-                    <li class="p-2">{{ partial "download-pack.html" .}}</li>
-                    <li class="p-2"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. </li>
-                </ul>
-            </div>
         </div>
     </div>
 </div>

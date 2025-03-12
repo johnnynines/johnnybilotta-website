@@ -346,6 +346,12 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
+  .mt-\[2rem\] {
+    margin-top: 2rem;
+  }
+  .mt-\[4rem\] {
+    margin-top: 4rem;
+  }
   .mt-\[8rem\] {
     margin-top: 8rem;
   }
@@ -985,6 +991,11 @@
   .md\:w-32 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 32);
+    }
+  }
+  .md\:w-100 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 100);
     }
   }
   .md\:w-200 {

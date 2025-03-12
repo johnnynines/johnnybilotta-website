@@ -2,14 +2,14 @@
 {{ partial "main-nav.html" .}}
 {{ partial "mobile-nav" .}}
 {{ partial "floating-logo.html" .}}
-	<div id="singleContent" class="container-fluid single-post">
+	<div id="singleContent" class="container-fluid single-post bg-[url(/img/bg-content.png)] bg-cover bg-left bg-fixed">
 		{{ if .Params.featured_image }}
 		{{ with .Params.featured_image }}
-		<div id="letterboxHeader" class="h-90 content-end bg-cover" style="background-image: url({{ . }});">
+		<div id="letterboxHeader" class="h-96 content-end bg-center" style="background-image: url({{ . }});">
 		{{ end }}
 
 		{{ else }}
-		<div id="letterboxHeader" class="h-90 content-end bg-cover" style="background-image: url( {{ .Site.Params.featuredImageDefault | relURL }} )">	
+		<div id="letterboxHeader" class="h-96 content-end bg-center" style="background-image: url( {{ .Site.Params.featuredImageDefault | relURL }} )">	
 		{{ end }}
 
 			<div class="container flex items-center mx-auto max-w-4xl bg-gray-950/80 p-4">
@@ -20,8 +20,8 @@
 			</div>
 		</div>
 		<div class="container flex max-w-4xl items-center mx-auto">
-			<div class="flex-auto  content">
-				<div class="post-body mb-5 py-5">
+			<div class="flex-auto content">
+				<div class="post-body mb-5 p-4">
 					{{ .Content }}
 				</div>
 			</div>

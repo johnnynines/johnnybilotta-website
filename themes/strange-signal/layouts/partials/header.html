@@ -8,9 +8,9 @@
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 	<title>{{ .Title }} - {{ .Site.Params.description }}</title>
 
-	<!-- JS for use -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	
-
+	<!-- JS for use -->
 	<!-- reCAPTCHA -->
 	<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lcfd9QiAAAAAG87EVM4fmhCVHNCEHMaOPLOscSZ"></script>
 	<script>
@@ -20,22 +20,6 @@
 			});
 		});
 	</script>
-	<!--<style type="text/css" media="all">
-		# Optional: comment out strange-case.css above, minify it with YUICompressor and paste inline styles here to lose a request...
-	</style>-->
-
-	<!-- {{ with resources.Get "scss/main.scss" }}
-		{{ $opts := dict "transpiler" "libsass" "targetPath" "css/main.css" }}
-		{{ with . | toCSS $opts}}
-			{{ if hugo.IsDevelopment }}
-				<link rel="stylesheet" href="{{ .Permalink }}">
-			{{ else }}
-				{{ with . | minify }}
-					<link rel="stylesheet" href="{{ .Permalink }}">
-				{{ end }}
-			{{ end }}
-		{{ end }}
-	{{ end }} -->
 	 
 	{{ partialCached "css.html" . }}
 

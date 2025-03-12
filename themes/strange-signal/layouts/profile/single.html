@@ -1,16 +1,16 @@
-{{ partial "header" .}}
-{{ partial "main-nav.html" .}}
-{{ partial "floating-logo.html" .}}
-{{ partial "mobile-nav" .}}
+{{ partial "header" . }}
+{{ partial "main-nav.html" . }}
+{{ partial "floating-logo.html" . }}
+{{ partial "mobile-nav" . }}
 
-<div id="about" class="my-10 mx-auto mt-[8em]">
-    <div id="profile" class="container content-profile mt-4 mx-auto">    
-        <div class="flex justify-center">
-            <div class="flex-none w-100 mx-5 p-12">
-                {{ partial "profile-pic.html" .}}
+<div id="about" class="md:mx-10 bg-[url(/img/bg-content.png)] bg-cover bg-top lg:bg-center bg-fixed lg:mx-auto">
+    <div id="profile" class="container content-profile mx-auto">    
+        <div class="flex flex-wrap md:flex-nowrap justify-center pt-[8em]">
+            <div class="flex-none lg:w-100 lg:mx-5 lg:p-1">
+                {{ partial "profile-pic.html" . }}
                 {{ partial "social.html" . }}
             </div>
-            <div class="flex-auto mx-12 content p-12">
+            <div class="flex-auto sm:mx-2 md:mx-12 content p-4 md:p-12">
                 {{ with .Site.GetPage "/profile/about.md"}}
                     {{ .Content }}
                 {{ end }}
@@ -22,7 +22,7 @@
             <div class="w-full text-center">
                 <h4 class="font-prometo uppercase text-2xl">Mission Statement</h4>
             </div>
-            <div class="text-center font-sommet uppercase text-2xl font-extralight italic w-200 leading-7 mx-auto">
+            <div class="text-center font-sommet uppercase text-2xl font-extralight italic sm:w-full md:w-200 leading-7 mx-auto">
                 <blockquote>
                 {{ with .Site.GetPage "/profile/mission-statement.md"}}
                     {{ .Content }}
@@ -31,12 +31,12 @@
             </div>
         </div>
     </div>
-    <div class="py-5">
+    <div class="bg-slate-900 py-5">
         <div id="missionStatement" class="container mx-auto">
             <div class="w-full text-center">
                 <h4 class="text-2xl">Contact Me</h4>
             </div>
-            <div class="w-200 justify-items-center mx-auto">
+            <div class="sm:w-full px-2 md:w-200 justify-items-center mx-auto">
                 {{ partial "contact-form" .}}
             </div>
         </div>

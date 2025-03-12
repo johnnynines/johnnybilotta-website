@@ -10,7 +10,7 @@
             {{ end }}
         </div>
         <div class="post-heading mb-4">
-            <h1 class="text-red-500 text-3xl"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            <h1 class="text-red-500 text-xl md:text-3xl"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
             <span class="post-date text-gray-400">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
         </div>
         <div class="post-summary text-gray-400">

@@ -2,11 +2,11 @@
 {{ partial "floating-logo.html" .}}
 {{ partial "main-nav.html" .}}
 {{ partial "mobile-nav" .}}
-<div class="container mx-auto">
+<div class="container mx-auto h-screen">
 	<div class="flex justify-content-md-center">
 		<div class="flex-auto sm:mx-2 md:mx-12 content p-4 md:p-12">
-			<div class="message-404 text-center">
-				<img src="{{ "img/404.svg" | relURL }}" alt="test" />
+			<div class="message-404 justify-items-center text-center">
+				<img src="{{ "img/404.svg" | relURL }}" alt="404 Nothing found at this address" class="mx-auto" />
 				<p>Unfortunately I moved that item or removed it from the site.</p>
 				<p><a href="{{ .Site.BaseURL }}">Return to the home page</a></p>
 			</div> 

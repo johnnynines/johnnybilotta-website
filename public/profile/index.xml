@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Profiles on Johnny Bilotta | Digital Product Designer</title>
-    <link>http://localhost:1313/profile/</link>
+    <link>https://johnnybilotta.com/profile/</link>
     <description>Recent content in Profiles on Johnny Bilotta | Digital Product Designer</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>2024</copyright>
     <lastBuildDate>Mon, 31 Oct 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/profile/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://johnnybilotta.com/profile/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mission Statement</title>
-      <link>http://localhost:1313/profile/mission-statement/</link>
+      <link>https://johnnybilotta.com/profile/mission-statement/</link>
       <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/profile/mission-statement/</guid>
+      <guid>https://johnnybilotta.com/profile/mission-statement/</guid>
       <description>&lt;p&gt;Design is &lt;strong&gt;the process that is necessary to produce practical solutions&lt;/strong&gt; to all problems large or small, digital or analog. The solution and process is never perfect, and can constantly be improved through further design iteration.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/profile/about/</link>
+      <link>https://johnnybilotta.com/profile/about/</link>
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/profile/about/</guid>
+      <guid>https://johnnybilotta.com/profile/about/</guid>
       <description>&lt;h1 id=&#34;hello-my-name-is-johnny&#34;&gt;Hello, my name is Johnny!&lt;/h1&gt;&#xA;&lt;p&gt;First, thank you for visiting my site. No matter what brought you here, I appreciate your time and interest in who I am and what I do.&lt;/p&gt;&#xA;&lt;p&gt;I am a digital product designer and front-end developer operating out of Philadelphia. My professional career began during the mid-90s after attending The Art Institute of Philadelphia where I studied industrial and product design. Quickly, my skills as a “computer nerd” coupled with my design abilities began revealing a path leading to a career in software and digital product development.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/profile/skills/</link>
+      <link>https://johnnybilotta.com/profile/skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/profile/skills/</guid>
+      <guid>https://johnnybilotta.com/profile/skills/</guid>
       <description></description>
     </item>
     <item>
       <title>Digital Product Design</title>
-      <link>http://localhost:1313/profile/icon-content/product-design/</link>
+      <link>https://johnnybilotta.com/profile/icon-content/product-design/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/profile/icon-content/product-design/</guid>
+      <guid>https://johnnybilotta.com/profile/icon-content/product-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Digital Product Development</title>
-      <link>http://localhost:1313/profile/icon-content/product-development/</link>
+      <link>https://johnnybilotta.com/profile/icon-content/product-development/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/profile/icon-content/product-development/</guid>
+      <guid>https://johnnybilotta.com/profile/icon-content/product-development/</guid>
       <description>&lt;p&gt;This is a blurb if you need it.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Product Strategy</title>
-      <link>http://localhost:1313/profile/icon-content/product-strategy/</link>
+      <link>https://johnnybilotta.com/profile/icon-content/product-strategy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/profile/icon-content/product-strategy/</guid>
+      <guid>https://johnnybilotta.com/profile/icon-content/product-strategy/</guid>
       <description></description>
     </item>
   </channel>

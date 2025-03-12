@@ -10,7 +10,7 @@
                 {{ partial "profile-pic.html" . }}
                 {{ partial "social.html" . }}
             </div>
-            <div class="flex-auto sm:mx-2 md:mx-12 content p-4 md:p-12">
+            <div class="flex-auto sm:mx-2 lg:mx-12 content p-4 lg:p-9">
                 {{ with .Site.GetPage "/profile/about.md"}}
                     {{ .Content }}
                 {{ end }}

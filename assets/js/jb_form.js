@@ -1,4 +1,3 @@
-// Description: This file contains the JavaScript code for the contact form on the website.
 
 const form = document.getElementById('emailForm');
 const successMessage = document.getElementById('messageSuccess');

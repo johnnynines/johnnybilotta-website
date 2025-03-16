@@ -2,14 +2,13 @@
 	<div id="mobileLogo" class="invisible">
 		{{ partial "floating-logo.html" . }}
 	</div>
-	{{ partial "main-nav.html" .}}
-	{{ partial "mobile-nav" .}}
+	{{ partial "main-nav.html" . }}
 	<div id="mainContainer" class="py-8 bg-gray-900 bg-[url(/img/bg-content.png)] bg-cover bg-center bg-fixed">
 		<div class="flex flex-wrap justify-center">
 			<div id="leftSidebar" class="flex-none w-100 mx-5 px-4">
 				{{ partial "sidebar-content.html" . }}
 			</div>
-			<div class="md:w-100 flex-auto max-w-4xl mx-3 md:mx-12 content mt-[2rem]">
+			<div class="md:w-100 flex-auto max-w-4xl mx-3 md:mx-12">
 				{{ partial "post-summary.html" . }}
 				<div class="text-center mb-4">
 					{{ template "_internal/pagination.html" . }}

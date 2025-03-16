@@ -346,11 +346,8 @@
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
-  .mt-\[2rem\] {
-    margin-top: 2rem;
-  }
-  .mt-\[4rem\] {
-    margin-top: 4rem;
+  .mt-\[1rem\] {
+    margin-top: 1rem;
   }
   .mt-\[8rem\] {
     margin-top: 8rem;

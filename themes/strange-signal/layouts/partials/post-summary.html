@@ -13,11 +13,11 @@ x{{ range (where .Site.RegularPages "Section" "post") }}
             <h1 class="text-red-500 text-xl md:text-3xl"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
             <span class="post-date text-gray-400">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
         </div>
-        <div class="post-summary text-gray-400">
+        <div class="post-summary text-gray-400 text-xl">
             {{ .Summary }}
         </div>
         <div class="post-footer w-full text-right justify-items-end">
-            <a href="{{ .Permalink }}" class="text-right">Read More<i class="far fa-chevron-right ml-2"></i></a>
+            <a href="{{ .Permalink }}" class="text-right text-xl">Read More<i class="far fa-chevron-right ml-2"></i></a>
         </div>
     </div>
 {{ end }}

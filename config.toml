@@ -9,7 +9,7 @@ googleAnalytics = 'G-W1NNMCGNMG'
 	colorScheme = "night"
 	DateFormat = "2 Jan 2006"
 	description = "Digital Product Designer + Developer + Technophile"
-	sidebarFreeText = "Hi! My name is Johnny. I design digital products and code things."
+	sidebarFreeText = "Hi! My name is Johnny. I design digital products and build things."
 	featuredImageDefault = "img/featured-image-default.jpg"
 
 [menu]

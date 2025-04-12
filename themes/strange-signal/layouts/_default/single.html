@@ -21,12 +21,15 @@
 		</div>
 		<div class="container flex max-w-4xl items-center mx-auto">
 			<div class="flex-auto content">
-				<div class="post-body mb-5 p-4">
+				<div class="post-body mb-5 p-4 text-xl leading-8">
 					{{ .Content }}
 				</div>
 			</div>
-			</div>
 		</div>
+		<div class="container flex max-w-5xl items-center mx-auto">
+			<div class="flex-auto content">
+				{{ partial "comments.html" . }}
+			</div>
 	</div>
 
 {{ partial "footer.html" . }}

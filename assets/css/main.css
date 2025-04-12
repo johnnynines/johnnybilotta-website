@@ -82,4 +82,8 @@
     blockquote {
         margin-bottom: 1.5rem;
     }
+
+    .utterances {
+        margin: 0;
+    }
 }

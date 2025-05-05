@@ -1,21 +1,25 @@
-
-	<div class="sidebar-content">
-		<div id="mainLogo">
-			<a href="{{ .Site.BaseURL }}"><img src="{{ "img/logo-monogram-scan@2x.png" | absURL }}" alt="test" /></a>
+<div class="sticky top-20 z-40">
+		<div id="mainLogo" class="w-full mx-auto my-8 max-w-60">
+			<a href="{{ .Site.BaseURL }}"><img src="{{ "img/logo-monogram-scan@2x.png" | absURL }}" alt="Johnny Bilotta logo" class="w-full" /></a>
 		</div>
 
-
-		<div class="sidebar-share sidebar-icons">
+		<div class="my-6 flex justify-center space-x-4">
 			{{ partial "social-share.html" . }}
 		</div>
 
 		{{ if .Site.Params.contact_email }}
-		<div class="sidebar-contact">
-			&#187; <a href="mailto:{{ .Site.Params.contact_email }}">Email Us</a>
+		<div class="my-4 text-center">
+			<a href="mailto:{{ .Site.Params.contact_email }}" class="text-sky-500 hover:text-sky-400 transition-colors duration-300 inline-flex items-center">
+				<span class="mr-2">Email Me</span>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline" viewBox="0 0 16 16">
+					<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+				</svg>
+			</a>
 		</div>
 		{{ end }}
 
-		<p class="copyright">{{ with .Site.Params.copyright }}{{ . }}{{ else }}&copy; {{ now.Format "2006" }}. All rights reserved. {{end}}</p>
-		<p class="attr">Powered by <a href="http://gohugo.io">Hugo</a>
-
+		<div class="border-t border-gray-700 pt-4 mt-8">
+			<p class="text-gray-500 text-sm text-center">{{ with .Site.Params.copyright }}{{ . }}{{ else }}&copy; {{ now.Format "2006" }} Johnny Bilotta. All rights reserved. {{end}}</p>
+			<p class="text-gray-600 text-sm text-center mt-2">Powered by <a href="http://gohugo.io" class="text-gray-500 hover:text-sky-500 transition-colors duration-300">Hugo</a></p>
+		</div>
 	</div>

@@ -4,37 +4,81 @@
 {{ partial "mobile-nav" . }}
 
 <div id="about" class="md:mx-10 bg-[url(/img/bg-content-alt.png)] bg-cover bg-top lg:bg-center bg-fixed lg:mx-auto">
+    <!-- About Section -->
     <div id="profile" class="container content-profile mx-auto">    
         <div class="flex flex-wrap md:flex-nowrap justify-center pt-[8em]">
             <div class="flex-none lg:w-100 lg:mx-5 lg:p-1">
                 {{ partial "profile-pic.html" . }}
                 {{ partial "social.html" . }}
             </div>
-            <div class="flex-auto sm:mx-2 lg:mx-12 content p-4 lg:p-9">
-                {{ with .Site.GetPage "/profile/about.md"}}
-                    {{ .Content }}
-                {{ end }}
+            <div class="flex-auto sm:mx-2 lg:mx-12 p-4 lg:p-9 text-2xl">
+                <h1 class="font-prometo text-4xl font-bold text-red-600 mb-4">Hello! My name is Johnny Bilotta</h1>
+                <p class="font-proxima text-slate-400">Thank you for visiting my website!</p>
+                <div class="text-base/8">
+                    {{ with .Site.GetPage "/profile/about.md"}}
+                        {{ .Content }}
+                    {{ end }}
+                </div>
             </div>
         </div>
     </div>
-    <div class="bg-slate-950 py-6">
-        <div id="missionStatement" class="container mx-auto my-4">
-            <div class="w-full text-center">
-                <h4 class="font-prometo uppercase text-2xl">Mission Statement</h4>
+
+
+    <!-- Mission Statement -->
+    <div class="bg-slate-950/90 py-16">
+        <div id="missionStatement" class="container mx-auto my-4 max-w-5xl px-4">
+            <div class="w-full text-center mb-8">
+                <h4 class="font-prometo uppercase text-3xl font-bold text-gray-100">Mission Statement</h4>
             </div>
-            <div class="text-center font-sommet uppercase text-2xl font-extralight italic sm:w-full md:w-200 leading-7 mx-auto">
-                <blockquote>
+            <div class="text-center font-sommet uppercase text-2xl font-extralight italic sm:w-full md:w-200 leading-7 mx-auto text-gray-300">
+                <blockquote class="border-l-4 border-sky-500 pl-6 py-2">
                 {{ with .Site.GetPage "/profile/mission-statement.md"}}
                     {{ .Content }}
                 {{ end }}
                 </blockquote>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="bg-slate-900 py-16">
+        <div id="experience" class="container mx-auto width-full">
+            <div class="w-full mb-12">
+                
+            </div>
+            <div class="w-full flex flex-wrap justify-between profesional-experience">
+                <div class="max-w-3xl flex-1 px-2">
+                    <h2 class="text-3xl font-bold font-prometo uppercase text-gray-100 mb-4">Design Experience</h2>
+                    <p class="text-gray-300 text-xl max-w-3xl">A hands on approach to product design and development.</p>
+                    {{ partial "design-experience.html" . }}
+                 </div>
+                <div class="w-96 flex-none">
+                    {{ partial "radar-chart" (dict "dataSource" "core-skills" ) }}
+                </div>
+            <div>
+
             </div>
         </div>
     </div>
-    <div class="bg-slate-900 py-5">
-        <div id="missionStatement" class="container mx-auto">
-            <div class="w-full text-center">
-                <h4 class="text-2xl">Contact Me</h4>
+
+    <!-- Skills Section -->
+    <div class="bg-slate-950 py-16">
+        <div id="skills" class="container mx-auto max-w-5xl px-4">
+            <div class="w-full text-center mb-12">
+                <h2 class="text-3xl font-bold font-prometo uppercase text-gray-100 mb-4">Skills & Expertise</h2>
+                <p class="text-gray-300 text-xl max-w-3xl mx-auto">Technologies, tools, and methodologies I've mastered throughout my career</p>
+            </div>
+            <div class="skills-container">
+                {{ partial "skill-section.html" . }}
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <div class="bg-slate-900 py-16">
+        <div id="contact" class="container mx-auto max-w-3xl px-4">
+            <div class="w-full text-center mb-8">
+                <h4 class="text-3xl font-bold font-prometo uppercase text-gray-100">Contact Me</h4>
+                <p class="text-gray-300 text-xl mt-4">Interested in working together? Feel free to reach out!</p>
             </div>
             <div class="sm:w-full px-2 md:w-200 justify-items-center mx-auto">
                 {{ partial "contact-form" .}}

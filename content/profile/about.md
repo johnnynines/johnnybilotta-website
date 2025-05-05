@@ -1,20 +1,15 @@
 ---
 title: "About"
-date: "2022-04-09"
+date: "2025-04-09"
 menu: "main"
 type: "profile"
 ---
 
-# Hello, my name is Johnny!
+I'm a strategic design leader and product innovator with over 25 years of experience crafting exceptional digital experiences across FinTech, Healthcare, and Logistics sectors. What sets me apart is my rare combination of design leadership and technical fluency – I don't just envision great products, I understand how to build them.
 
-First, thank you for visiting my site. No matter what brought you here, I appreciate your time and interest in who I am and what I do.
+My journey began in 1983 at age 7, when I wrote my first BASIC program on an Apple IIe. By my teens, I was mastering AutoCAD and providing electronic drafting services to engineering firms. This foundation of technical understanding has informed my approach to design throughout my career, enabling me to create solutions that are both visually compelling and technically feasible.
 
-I am a digital product designer and front-end developer operating out of Philadelphia. My professional career began during the mid-90s after attending The Art Institute of Philadelphia where I studied industrial and product design. Quickly, my skills as a “computer nerd” coupled with my design abilities began revealing a path leading to a career in software and digital product development.
+Unlike many design leaders, I don't just sketch ideas and hand them off. I contribute significant front-end code, establish technical architecture, and build functional prototypes. My programming journey spans multiple decades and languages – from BASIC in the 1980s to modern JavaScript frameworks today.
 
-Today I stand with the experience of a twenty-five year career in digital design behind me. I have worked on projects ranging from product development for Nike, to product development for Capital One. During the last fifteen years I have held leadership roles not only professionally, but within the technology community in and around Philadelphia. 
+This technical depth enables me to make more informed design decisions, anticipate implementation challenges, and communicate effectively with engineering teams. When I design a component, I understand how it will be built, what constraints might arise, and how to optimize for performance and scalability.
 
-My work and my personal life are very much interconnected through my love of technology. I dable with system design, micro-computing, information security and red teaming.
-
-When not pursuing new avenues of my career I spend my time learning ethical hacking, systems administration and network infrastructure. Sprinkle in some Destiny, Forza and various other games on my PC for fun. I also passionately follow motorsports, the Philadelphia Flyers, Philadelphia Union and Tottenham Hotspur FC.
-
-Currently, I reside in Philadelphia, PA with my wife Abby, our two cats Dorian and Phe, and our dog Drax.

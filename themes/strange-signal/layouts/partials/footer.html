@@ -1,13 +1,11 @@
 {{ partial "modal-contact.html" . }}
-<div id="mobileFooter" class="container-fluid">
+<div id="mobileFooter" class="w-full">
   {{ partial "mobile-footer.html" . }}
 </div>
 
 {{ template "_internal/google_analytics.html" . }}
 
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Include all necessary scripts -->
 <script src="https://kit.fontawesome.com/7529b71c4e.js" crossorigin="anonymous"></script>
 {{ $highlightjs := resources.Get "js/highlight.min.js" }}
 {{ $higlightline := resources.Get "js/highlight.ln.js" }}
@@ -16,7 +14,6 @@
 <script src="{{ $highlightjs.RelPermalink }}"></script>
 <script src="{{ $higlightline.RelPermalink }}"></script>
 <script src="{{ $scripts.RelPermalink }}"></script>
-
 
 </body>
 </html>

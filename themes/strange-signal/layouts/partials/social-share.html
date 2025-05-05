@@ -1,16 +1,16 @@
 <div id="socialSharingGroup" class="social-icons">
-    <ul>
-        <li class="mb-2">
-            <a href="https://www.facebook.com/sharer.php?u={{ .Permalink }}"><i class="fab fa-facebook"></i></a>
+    <ul class="flex flex-col items-center space-y-4">
+        <li>
+            <a href="https://www.facebook.com/sharer.php?u={{ .Permalink }}" class="text-slate-400 hover:text-sky-500 transition-colors duration-300 block text-xl" target="_blank" rel="noopener" aria-label="Share on Facebook"><i class="fab fa-facebook"></i></a>
         </li>
-        <li class="mb-2">
-            <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via=johnnynines" target="_blank" alt="Share on Twitter"><i class="fab fa-twitter"></i></a>
+        <li>
+            <a href="https://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via=johnnynines" class="text-slate-400 hover:text-sky-500 transition-colors duration-300 block text-xl" target="_blank" rel="noopener" aria-label="Share on Twitter"><i class="fab fa-twitter"></i></a>
         </li>
-        <li class="mb-2">
-            <a href="https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}"><i class="fab fa-linkedin"></i></a>
+        <li>
+            <a href="https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}" class="text-slate-400 hover:text-sky-500 transition-colors duration-300 block text-xl" target="_blank" rel="noopener" aria-label="Share on LinkedIn"><i class="fab fa-linkedin"></i></a>
         </li>
-        <li class="mb-2">
-            <a href="https://pinterest.com/pin/create/bookmarklet/?media=[post-img]&url=[post-url]&is_video=[is_video]&description=[post-title]"><i class="fab fa-pinterest"></i></a>
+        <li>
+            <a href="https://pinterest.com/pin/create/bookmarklet/?url={{ .Permalink }}&description={{ .Title }}" class="text-slate-400 hover:text-sky-500 transition-colors duration-300 block text-xl" target="_blank" rel="noopener" aria-label="Share on Pinterest"><i class="fab fa-pinterest"></i></a>
         </li>
     </ul>
 </div>

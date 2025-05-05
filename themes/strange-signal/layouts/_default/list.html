@@ -1,38 +1,37 @@
 {{ partial "header.html" . }}
-	<div id="mobileLogo">
+	<div id="mobileLogo" class="md:hidden">
 		{{ partial "floating-logo.html" . }}
 	</div>
 	{{ partial "main-nav.html" .}}
 	{{ partial "mobile-nav" .}}
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-4 col-md-3 col-lg-3 sidebar">
-
-			{{ partial "sidebar-content.html" . }}
-
+	<div class="w-full bg-[url(/img/bg-content-alt.png)] bg-cover bg-left bg-fixed min-h-screen">
+		<div class="flex flex-col md:flex-row max-w-7xl mx-auto">
+			<div class="w-full md:w-1/4 lg:w-1/4 sidebar p-4">
+				{{ partial "sidebar-content.html" . }}
 			</div>
-			<div class="col-sm-7 col-sm-offset-4 col-md-6 col-md-offset-3 col-lg-5 col-lg-offset-3 content">
-
+			
+			<div class="w-full md:w-2/3 lg:w-3/5 ml-0 md:ml-4 p-4 content">
 				{{ range .Paginator.Pages }}
-				<div class="post">
-
-					<div class="post-heading">
-						<h1><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-						<span>{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
+				<div class="post mb-12">
+					<div class="post-heading mb-4">
+						<h1 class="text-2xl font-bold"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
+						<span class="text-gray-400">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.author }} by {{ .Params.author }}{{ end }}</span>
 					</div>
 
-					{{ .Content }}
-
+					<div class="prose prose-lg max-w-none">
+						{{ .Content }}
+					</div>
 				</div>
 				{{ end }}
 
-				<div class="text-center">
+				<div class="text-center my-8">
 					{{ template "_internal/pagination.html" . }}
 				</div>
-
 			</div>
-			<div class="col-sm-1 col-md-3 col-md-4">
+			
+			<div class="hidden lg:block lg:w-1/12">
+				<!-- Spacer column -->
 			</div>
 		</div>
 	</div>

@@ -1,27 +1,27 @@
 <div 
   id="modalContact" 
-  class="absolute top-0 left-0 w-full inset-0 opacity-0 h-full flex justify-center items-center pointer-events-none transition-opacity duration-300 ease-in-out z-[9999] bg-gray-950/80 modal"
+  class="fixed top-0 left-0 w-full h-full flex justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out z-[9999] bg-gray-950/80"
 >
-  <div class="bg-gray-950 rounded-md border border-gray-600 w-200 scale-95 transition-transform duration-300 ease-in-out modal-dialog">
-    <div class="border-b border-gray-700 p-4 items-start">
+  <div class="bg-gray-950 rounded-md border border-gray-600 w-full max-w-2xl mx-4 scale-95 transition-transform duration-300 ease-in-out">
+    <div class="p-0">
       <div class="flex border-b border-gray-700 p-4">
-        <h5 class="modal-title flex-auto text-3xl">Contact Me</h5>
-        <button id="modalClose" type="button" class="text-gray-400 flex-none text-2xl" data-bs-dismiss="modal" aria-label="Close">
+        <h5 class="flex-auto text-3xl text-gray-200">Contact Me</h5>
+        <button id="modalClose" type="button" class="text-gray-400 hover:text-white flex-none text-2xl" aria-label="Close">
           <i class="far fa-times"></i>&nbsp;</span>
         </button>
       </div>
-      <div class="p-4 modal-body">
-          <div class="container">
-              <div class="flex justify-center">
-                  <div class="flex-auto">
-                    <p>Thank you for visiting my site. I hope you found something useful or interesting. Please use this form to send me any feedback, questions or just to connect. Have a wonderful day!
-                    </p>
-                  </div>
-              </div>
+      <div class="p-4">
+        <div class="w-full">
+          <div class="flex justify-center">
+            <div class="w-full">
+              <p class="text-gray-300 mb-4">
+                Thank you for visiting my site. I hope you found something useful or interesting. Please use this form to send me any feedback, questions or just to connect. Have a wonderful day!
+              </p>
+            </div>
           </div>
+        </div>
         {{ partial "contact-form.html" .}}
       </div>
     </div>
   </div>
 </div>
-</script>

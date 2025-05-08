@@ -4,3 +4,9 @@
 - Use dash-case for partials, template and markdown files
 - Use camelCase for variables, functions and methods
 - Prefix all posts with current date using the YYMMDD format
+
+## Hugo Guidelines
+- All partials should be placed in the /themes/strange-signal/partials directory
+- All shortcodes should be placed in the /themes/strange-signal/shortcodes directory
+- Use TOML and JSON for data and configurations over YAML
+

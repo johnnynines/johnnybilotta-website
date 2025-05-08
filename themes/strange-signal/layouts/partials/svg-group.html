@@ -1,0 +1,39 @@
+{{/* 
+  Renders a group of SVG icons from the static/img/tools directory
+  
+  @param {string} group - The name of the SVG group defined in data/svg-groups.json
+  @param {string} class - Optional CSS class for the container
+  @param {string} iconClass - Optional CSS class for each icon
+  @param {string} width - Optional width for icons (default: "24")
+  @param {string} height - Optional height for icons (default: "24")
+  
+  Example usage:
+  {{ partial "svg-group" (dict "group" "webDev" "class" "tools-container" "iconClass" "tool-icon" "width" "32" "height" "32") }}
+*/}}
+
+{{ $group := .group }}
+{{ $class := .class | default "" }}
+{{ $iconClass := .iconClass | default "" }}
+{{ $width := .width | default "24" }}
+{{ $height := .height | default "24" }}
+
+{{ $svgGroups := site.Data.svgGroups }}
+{{ $icons := index $svgGroups $group }}
+
+<ul {{ with $class }}class="{{ . }} list-none"{{ end }}>
+  {{ range $icons }}
+    <li class="inline-block mr-4">
+      {{ $icon := . }}
+      {{ $name := .name }}
+      {{ $category := .category }}
+      {{ $name := .name }}
+      {{ partial "svg-icon" (dict 
+        "name" $name 
+        "category" $category 
+        "class" $iconClass
+        "width" $width
+        "height" $height
+      ) }}
+    </li>
+  {{ end }}
+</ul>

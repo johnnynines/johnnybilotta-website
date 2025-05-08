@@ -1,0 +1,39 @@
+{
+  "dev": [
+    { "name": "javascript", "category": "dev" },
+    { "name": "python", "category": "dev" },
+    { "name": "vue", "category": "dev" },
+    { "name": "bash_dark", "category": "dev"},
+    { "name": "golang_dark", "category": "dev"},
+    { "name": "typescript", "category": "dev"},
+    { "name": "html5", "category": "dev"},
+    { "name": "css", "category": "dev"},
+    { "name": "github_dark", "category": "dev"},
+    { "name": "nodejs", "category": "dev"},
+    { "name": "flask-dark", "category": "dev"}
+  ],
+  "design": [
+    { "name": "figma", "category": "design" },
+    { "name": "photoshop", "category": "design" },
+    { "name": "illustrator", "category": "design" },
+    { "name": "after-effects", "category": "design" },
+    { "name": "premiere", "category": "design" },
+    { "name": "tailwindcss", "category": "design" },
+    { "name": "gimp", "category": "design" }
+  ],
+  "socialMedia": [
+    { "name": "twitter", "category": "social" },
+    { "name": "linkedin", "category": "social" },
+    { "name": "github", "category": "social" }
+  ],
+  "backend": [
+    { "name": "nodejs", "category": "dev" },
+    { "name": "php", "category": "dev" },
+    { "name": "python", "category": "dev" }
+  ],
+  "cms": [
+    { "name": "wordpress", "category": "systems" },
+    { "name": "hugo", "category": "systems" },
+    { "name": "jekyll", "category": "systems" }
+  ]
+}

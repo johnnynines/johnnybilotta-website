@@ -1,0 +1,27 @@
+{{/* 
+  Renders an SVG icon from the static/img/tools directory
+  
+  @param {string} name - The name of the SVG file without extension
+  @param {string} category - The subdirectory within static/img/tools (design, dev, social, systems)
+  @param {string} class - Optional CSS class to add to the SVG
+  @param {string} width - Optional width (default: "24")
+  @param {string} height - Optional height (default: "24")
+  
+  Example usage:
+  {{ partial "svg-icon" (dict "name" "figma" "category" "design" "class" "tool-icon" "width" "32" "height" "32") }}
+*/}}
+
+{{ $name := .name }}
+{{ $category := .category }}
+{{ $class := .class | default "" }}
+{{ $width := .width | default "24" }}
+{{ $height := .height | default "24" }}
+
+<img 
+  src="/img/tools/{{ $category }}/{{ $name }}.svg" 
+  alt="{{ $name }} icon" 
+  {{ with $class }}class="{{ . }}"{{ end }}
+  width="{{ $width }}"
+  height="{{ $height }}"
+  loading="lazy"
+>

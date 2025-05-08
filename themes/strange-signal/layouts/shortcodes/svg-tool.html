@@ -1,0 +1,41 @@
+{{/* 
+  Shortcode for rendering individual or groups of SVG icons in markdown content
+  
+  Individual icon usage:
+  {{< svg-tool name="figma" category="design" class="tool-icon" width="32" height="32" >}}
+  
+  Group icons usage:
+  {{< svg-tool group="webDev" class="tools-container" iconClass="tool-icon" width="32" height="32" >}}
+*/}}
+
+{{ $isGroup := .Get "group" }}
+
+{{ if $isGroup }}
+  {{ $group := .Get "group" }}
+  {{ $class := .Get "class" }}
+  {{ $iconClass := .Get "iconClass" }}
+  {{ $width := .Get "width" | default "24" }}
+  {{ $height := .Get "height" | default "24" }}
+  
+  {{ partial "svg-group" (dict 
+    "group" $group 
+    "class" $class 
+    "iconClass" $iconClass
+    "width" $width
+    "height" $height
+  ) }}
+{{ else }}
+  {{ $name := .Get "name" }}
+  {{ $category := .Get "category" }}
+  {{ $class := .Get "class" }}
+  {{ $width := .Get "width" | default "24" }}
+  {{ $height := .Get "height" | default "24" }}
+  
+  {{ partial "svg-icon" (dict 
+    "name" $name 
+    "category" $category 
+    "class" $class
+    "width" $width
+    "height" $height
+  ) }}
+{{ end }}

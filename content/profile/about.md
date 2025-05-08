@@ -13,3 +13,4 @@ Unlike many design leaders, I don't just sketch ideas and hand them off. I contr
 
 This technical depth enables me to make more informed design decisions, anticipate implementation challenges, and communicate effectively with engineering teams. When I design a component, I understand how it will be built, what constraints might arise, and how to optimize for performance and scalability.
 
+Throughout my career as a digital designer, I've leveraged my dual expertise to drive transformation for organizations ranging from startups to enterprise clients like Nike, Kimberly-Clark, CapitalOne, BlackRock and Fidelity.

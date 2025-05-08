@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 60 60">
+  <!-- Generator: Adobe Illustrator 29.5.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 137)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: none;
+      }
+
+      .st1 {
+        fill: #0acf83;
+      }
+
+      .st2 {
+        fill: #ff7262;
+      }
+
+      .st3 {
+        fill: #1abcfe;
+      }
+
+      .st4 {
+        fill: #f24e1e;
+      }
+
+      .st5 {
+        fill: #a259ff;
+      }
+
+      .st6 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="st0" x="11.9" y="3.3" width="35.6" height="53.3"/>
+    </clipPath>
+  </defs>
+  <g class="st6">
+    <g>
+      <path class="st1" d="M20.8,56.7c4.9,0,8.9-4,8.9-8.9v-8.9h-8.9c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9Z"/>
+      <path class="st5" d="M11.9,30c0-4.9,4-8.9,8.9-8.9h8.9v17.8h-8.9c-4.9,0-8.9-4-8.9-8.9Z"/>
+      <path class="st4" d="M11.9,12.2c0-4.9,4-8.9,8.9-8.9h8.9v17.8h-8.9c-4.9,0-8.9-4-8.9-8.9Z"/>
+      <path class="st2" d="M29.7,3.3h8.9c4.9,0,8.9,4,8.9,8.9s-4,8.9-8.9,8.9h-8.9V3.3Z"/>
+      <path class="st3" d="M47.4,30c0,4.9-4,8.9-8.9,8.9s-8.9-4-8.9-8.9,4-8.9,8.9-8.9,8.9,4,8.9,8.9Z"/>
+    </g>
+  </g>
+</svg>

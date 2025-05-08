@@ -1,9 +1,9 @@
-{{ $developmentExp1 := .Site.GetPage "/profile/development-exp-01.md" }}
+{{ $techExp := .Site.GetPage "/profile/tech-exp.md" }}
 
-{{ if $developmentExp1 }}
+{{ if $techExp }}
 <div class="relative space-y-10">
     <div class="experience-item relative">
-        {{ $developmentExp1.Content }}
+        {{ $techExp.Content }}
     </div>
 </div>
 {{ else }}

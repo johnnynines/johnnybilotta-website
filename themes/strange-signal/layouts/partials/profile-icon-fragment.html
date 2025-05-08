@@ -2,8 +2,5 @@
 {{range where .Site.Pages ".Params.fragment" "icon-fragment" }} 
 <div class="icon-fragment col">
     <i class="{{ .Params.icon }}"></i>
-    <div class="fragment-content">
-        <h5>{{ .Title }}</h5>
-    </div>
 </div>
 {{end}}

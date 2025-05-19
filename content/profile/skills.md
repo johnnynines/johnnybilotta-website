@@ -18,9 +18,9 @@ params:
         - "Service Design"
         - "System Design"
     Development:
-        - "HTML5"
-        - "CSS3/SCSS"
         - "JavaScript"
+        - "HTML5"
+        - "CSS/SCSS/Styled Components"
         - "TypeScript"
         - "Node"
         - "React"

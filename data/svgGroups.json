@@ -3,6 +3,7 @@
     { "name": "javascript", "category": "dev" },
     { "name": "python", "category": "dev" },
     { "name": "vue", "category": "dev" },
+    { "name": "tailwindcss", "category": "design" },
     { "name": "bash_dark", "category": "dev"},
     { "name": "golang_dark", "category": "dev"},
     { "name": "typescript", "category": "dev"},
@@ -18,7 +19,6 @@
     { "name": "illustrator", "category": "design" },
     { "name": "after-effects", "category": "design" },
     { "name": "premiere", "category": "design" },
-    { "name": "tailwindcss", "category": "design" },
     { "name": "gimp", "category": "design" }
   ],
   "socialMedia": [

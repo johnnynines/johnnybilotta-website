@@ -7,7 +7,7 @@ googleAnalytics = 'G-W1NNMCGNMG'
 
 [params]
 	colorScheme = "night"
-	DateFormat = "2 Jan 2006"
+	DateFormat = "2 Jan 2025"
 	description = "Digital Product Designer + Developer + Technophile"
 	sidebarFreeText = "Hi! My name is Johnny. I design digital products and build things."
 	featuredImageDefault = "img/featured-image-default.jpg"

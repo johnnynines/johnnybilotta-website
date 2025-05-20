@@ -4,8 +4,4 @@ date: "2025-05-03"
 type: "profile"
 ---
 
-For me, success isn't measured by aesthetic appeal alone – it's about solving real problems for users and delivering measurable business impact. Unlike many design leaders, I don't just sketch ideas and hand them off. I contribute significant front-end code, establish technical architecture, and build functional prototypes. My programming journey spans multiple decades and languages – from BASIC in the 1980s to modern JavaScript and Python frameworks today.
-
-This technical depth enables me to make more informed design decisions, anticipate implementation challenges, and communicate effectively with engineering teams. When I design a component, I understand how it will be built, what constraints might arise, and how to optimize for performance and scalability.
-
-I believe great products emerge at the intersection of user needs, business objectives, and technical feasibility. By understanding all three dimensions, I create solutions that not only delight users but also drive meaningful results.
+Design may be my primary playground, but I'm no stranger to pushing commits. I dive into code, daily. Not just as a hobby, but as a crucial counterpart to my design practice. This hands-on development experience has become my secret weapon, allowing me to bridge the gap between aesthetic vision and technical feasibility. By understanding what happens behind the scenes, I create designs that don't just look beautiful, but actually work beautifully in production. My command of coding fundamentals transforms collaboration with developers from translation to true partnership.

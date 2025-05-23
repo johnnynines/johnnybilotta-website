@@ -23,12 +23,20 @@
         font-family: var(--font-prometo);
         text-transform: uppercase;
     }
+    .post-body h2 {
+        border-bottom: 1px dotted var(--color-gray-500);
+        padding-bottom: 1em;
+    }
     h3 {
         font-size: var(--text-xl);
         font-weight: 700;
         margin-bottom: 1.5rem;
         font-family: var(--font-prometo);
         text-transform: uppercase;
+    }
+    .post-body h3 {
+        border-right: 2em solid var(--color-red-600);
+        padding-right: 1em;
     }
     h4 {
         font-size: var(--text-lg);

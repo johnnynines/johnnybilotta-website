@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+{{ partial "main-nav.html" .}}
+{{ partial "mobile-nav" .}}
+{{ partial "floating-logo.html" .}}
+<div class="relative h-screen">
+    <div class="absolute inset-0">
+        <div class="absolute top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
+    </div>
+    <div class="mx-auto container-sm w-full md:w-4/6 lg:w-3/5 px-4 my-[8em]">
+        <div class="content">
+            <div class="w-full">
+                <h1 class="my-3 text-3xl text-red-600">{{ .Title }}</h1>
+                <p>{{ .Description}}</p>
+            </div>
+            <div class="post-body mb-5 text-xl leading-8">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+    <div class="container flex w-full md:w-4/6 items-center mx-auto border-t border-dotted border-slate-500">
+        <div class="flex-auto content mt-6">
+            {{ partial "comments.html" . }}
+        </div>
+    </div>
+</div>
+{{ partial "footer.html" . }}

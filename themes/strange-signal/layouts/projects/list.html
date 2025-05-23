@@ -1,0 +1,36 @@
+{{ partial "header.html" . }}
+{{ partial "main-nav.html" . }}
+{{ partial "mobile-nav" . }}
+{{ partial "floating-logo.html" . }}
+<div id="projects" class="relative mx-auto container-sm w-full md:w-4/6 lg:w-3/5 px-4 my-[8em] h-[100vh]">
+    <div class="projects-title row my-5">
+        <div class="col-lg-10">
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Description }}</p>
+        </div>
+    </div>
+    <div class="mb-5 block">
+        {{ range .Paginator.Pages }}
+        <div class="col-lg-3 col-sm-12">
+            <div class="card mb-5">
+                <div class="tile-feature-img-container mb-1">
+                    <h2 class="text-2xl text-red-600 border-b-1 border-dotted border-slate-500">
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </h2>
+                    <p>{{ .Description }}</p>
+                    <ul class="flex flex-wrap gap-3 list-none my-8 p-0">
+                         {{ range .Keywords }}
+                            <li class="bg-slate-600 text-gray-300 px-3 py-1 rounded-full text-sm">{{ . }}</li>
+                        {{ end }}
+                    </ul>
+                    <p class="text-right"><a href="{{ .RelPermalink }}">Read more <i class="fal fa-chevron-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+        {{ else }}
+            <p>Nothing here to see!</p>
+        {{ end }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

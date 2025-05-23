@@ -1,0 +1,11 @@
+{{ $workingOn := .Site.GetPage "/profile/currently-working-on.md" }}
+{{ if $workingOn }}
+<div class="my-3 px-4">
+    <h2 class="text-lg font-bold font-prometo uppercase text-gray-100 mb-4">Currently Working On</h2>
+    <div class="relative space-y-10">
+        <div class="experience-item relative text-lg">
+            {{ $workingOn.Content }}
+        </div>
+    </div>
+</div>
+{{ end}}
